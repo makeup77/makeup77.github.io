@@ -114,7 +114,7 @@ function is_activeitem($url, $checkDefault = false) {
                 <div style="width: 200px;" class="megacol column1 first">
                   <ul class="megamenu level1">
                     <li class="mega first">
-                      <a title="Контрольное" class="mega first" href="kontrolnoe.php"><span class="menu-title">Контрольное</span></a>
+                      <a title="Контрольное" class="mega first" href="kontrolnoe.html"><span class="menu-title">Контрольное</span></a>
                     </li>
                     <li class="mega">
                       <a href="#" class="mega"
