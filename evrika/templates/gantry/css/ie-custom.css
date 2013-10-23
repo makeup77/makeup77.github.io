@@ -1,0 +1,15 @@
+.gf-menu {
+  right: -275px;
+}
+
+.gf-menu li:last-child {
+  background: url("../images/navigation/nav-right-norm.png");
+}
+
+.gf-menu li:last-child:hover {
+  background: url("../images/navigation/nav-right-hover.png");
+}
+
+.gf-menu li.active:last-child {
+  background: url("../images/navigation/nav-right-act.png");
+}

@@ -1,0 +1,105 @@
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.rslides li {
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+}
+
+.callbacks_container {
+  margin-bottom: 20px;
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.callbacks {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.callbacks li {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.callbacks img {
+  display: block;
+  position: relative;
+  z-index: 1;
+  height: auto;
+  width: 100%;
+  border: 0;
+}
+
+.callbacks .caption {
+  z-index:101;
+  position:absolute;
+  right: 0;
+  height:330px;
+  padding:20px 0 0 20px;
+  background: url('../images/slider_bg.png');
+  width:300px;
+  font-size:1.3em;
+  line-height:1.33;
+  color:#fff;
+  display: block;
+  max-width: none;
+}
+
+.callbacks_nav {
+  position:absolute;
+  width:28px;
+  height:28px;
+  display:block;
+  z-index:500;
+  bottom: 20px;
+  right: 52px;
+  text-indent: -9999px;
+  overflow: hidden;
+  text-decoration: none;
+  background: url("../images/prev-norm.png") no-repeat left top;
+}
+
+.callbacks_nav:hover {
+  background: url("../images/prev-hover.png") no-repeat left top;
+}
+
+.callbacks_nav.next {
+  left: auto;
+  background: url("../images/next-norm.png") no-repeat right top;
+  right: 20px;
+}
+
+.callbacks_nav.next:hover {
+  background: url("../images/next-hover.png") no-repeat right top;
+}

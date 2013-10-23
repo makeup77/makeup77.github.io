@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <title>Фотогалерея - first</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+      <link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection" />
+      <link rel="stylesheet" href="css/responsiveslides.css" type="text/css" media="screen, projection" />
+      <link rel="stylesheet" href="css/responsivestyle.css" type="text/css" media="screen, projection" />
+      <!--[if lt IE 9]>
+        <script src="js/css3-mediaqueries.js"></script>
+      <![endif]-->
+
+      <!--[if IE 7]>
+        <link href="css/ie7.css" rel="stylesheet" type="text/css">
+      <![endif]-->
+
+      <!--[if IE 8]>
+        <link href="css/ie8.css" rel="stylesheet" type="text/css">
+      <![endif]-->
+
+      <script src="js/libs/jquery/jquery-1.8.2.min.js"></script>
+      <script src="js/slides.js"></script>
+
+      <!-- Add mousewheel plugin (this is optional) -->
+      <script type="text/javascript"
+      src="js/libs/jquery/jquery.mousewheel-3.0.6.pack.js"></script>
+
+      <!-- Add fancyBox main JS and CSS files -->
+      <script type="text/javascript"
+      src="js/libs/jquery/fancybox/jquery.fancybox.js"></script>
+      <link rel="stylesheet" type="text/css"
+            href="js/libs/jquery/fancybox/jquery.fancybox.css" media="screen" />
+
+      <!-- Add Button helper (this is optional) -->
+      <link rel="stylesheet" type="text/css"
+            href="js/libs/jquery/fancybox/helpers/jquery.fancybox-buttons.css" />
+      <script type="text/javascript"
+      src="js/libs/jquery/fancybox/helpers/jquery.fancybox-buttons.js"></script>
+
+      <!-- Add Thumbnail helper (this is optional) -->
+      <link rel="stylesheet" type="text/css"
+            href="/js/libs/jquery/fancybox/helpers/jquery.fancybox-thumbs.css" />
+      <script type="text/javascript"
+      src="js/libs/jquery/fancybox/helpers/jquery.fancybox-thumbs.js"></script>
+
+      <!-- Add Media helper (this is optional) -->
+      <script type="text/javascript"
+      src="js/libs/jquery/fancybox/helpers/jquery.fancybox-media.js"></script>
+
+      <!-- IE gallery fix) -->
+      <!--[if lt IE 9]>
+      <script>
+        $(function() {
+          $('.gallery-box:nth-child(3n+3)').css('padding-right', 0);
+        });
+      </script>
+      <![endif]-->
+
+      <script>
+        $(function() {
+          $("#slides").slides();
+        });
+
+        jQuery(function($) {
+          $(".fancybox-gallery").fancybox({
+            prevEffect: 'none',
+            nextEffect: 'none',
+            closeBtn: false,
+            helpers: {
+              title: {type: 'inside'},
+              buttons: {}
+            }
+          });
+        });
+      </script>
+      <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-35531238-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script');
+          ga.type = 'text/javascript';
+          ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(ga, s);
+        })();
+
+      </script>
+  </head>
+
+  <body>
+    <div id="bg_tel"></div>
+    <div id="wrapper">
+
+      <header id="header">
+        <div>
+          <a href="http://lazzat-cafe.ru/"><div class="logo"></div></a>
+        </div>
+        <div class="contacts">
+          <div class="tel"><span class="cod_tel">(495)</span> 640-22-72</div>
+          г. Москва, Алтуфьевское ш., 48, к.1
+        </div>
+        <div class="slogan">
+
+          Кафе «Плов и паста» в&nbsp;Алтуфьево Восточная&nbsp;и&nbsp;Европейская&nbsp;кухня
+
+        </div>
+      </header><!-- #header-->
+
+      <div id="container">
+
+        <div class="navigation">
+          <ul class="nav">
+            <li class="left">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="">
+              <a href="menu.html">Меню</a>
+            </li>
+            <li class="active">
+              <a href="gallery.html">Фотогалерея</a>
+            </li>
+            <li class="">
+              <a href="banquets.html">Предложения</a>
+            </li>
+            <li class="right">
+              <a href="contact.html">Контакты</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="content col-min">
+          <div class="col1">
+            <h2><span>Наши </span>предложения</h2>
+            <h2>
+              Предложения кафе<br />
+              PLOVE & PASTA
+            </h2>
+            <ul class="menu-deals">
+              <li class=""><a
+                  href="businesslunch.html">Бизнес-ланч</a></li>
+              <li class=""><a
+                  href="wedding.html">Свадьбы, Юбилеи, Банкеты</a></li>
+              <li class=""><a
+                  href="childevents.html">Детские праздники</a></li>
+              <li class=""><a
+                  href="sportsbroadcast.html">Спортивные трансляции</a></li>
+              <li class=""><a
+                  href="conference.html">Зал для конференций</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="content clearfix">
+          <div class="col1">
+            <h2>Предложения</h2>
+            <ul class="menu-deals">
+              <li class=""><a
+                  href="businesslunch.html">Бизнес-ланч</a></li>
+              <li class=""><a
+                  href="wedding.html">Свадьбы, Юбилеи, Банкеты</a></li>
+              <li class=""><a
+                  href="childevents.html">Детские праздники</a></li>
+              <li class=""><a
+                  href="sportsbroadcast.html">Спортивные трансляции</a></li>
+              <li class=""><a
+                  href="conference.html">Зал для конференций</a></li>	
+            </ul>						
+
+            <h2>Доставка обедов</h2>
+            <p class="first">Минимальная сумма заказа – 800 рублей.</p>
+            <p>Заказ обеда по схеме «сегодня&nbsp;на&nbsp;завтра».<br />Прием заказа до&nbsp;16-00.</p>
+            <p>Обеды доставляются в одноразовой упаковке.</p>
+            <p class="last">Доставка обедов по всей Москве и Подмосковью.</p>
+            <div class="phone">
+              <img src="images/phone.png" alt="Телефон:" />
+              640-22-72
+            </div>
+          </div>
+
+          <div class="col2">
+            <h1>Фотогалерея</h1>
+            <div id="gallery">
+
+              <div class="gallery-box">
+                <a class="fancybox-gallery" rel="fancybox-gallery"
+                   title="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."
+                   href="images/gallery/thumbs/phoca_thumb_l_lazzat_0001.jpg"><img
+                    src="images/gallery/thumbs/phoca_thumb_m_lazzat_0001.jpg"
+                    alt="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."></a>
+              </div>
+
+
+              <div class="gallery-box">
+                <a class="fancybox-gallery" rel="fancybox-gallery"
+                   title="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."
+                   href="images/gallery/thumbs/phoca_thumb_l_lazzat_0002.jpg"><img
+                    src="images/gallery/thumbs/phoca_thumb_m_lazzat_0002.jpg"
+                    alt="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."></a>
+              </div>
+
+
+              <div class="gallery-box">
+                <a class="fancybox-gallery" rel="fancybox-gallery"
+                   title="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."
+                   href="images/gallery/thumbs/phoca_thumb_l_lazzat_0006.jpg"><img
+                    src="images/gallery/thumbs/phoca_thumb_m_lazzat_0006.jpg"
+                    alt="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."></a>
+              </div>
+
+
+              <div class="gallery-box">
+                <a class="fancybox-gallery" rel="fancybox-gallery"
+                   title="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."
+                   href="images/gallery/thumbs/phoca_thumb_l_lazzat_0008.jpg"><img
+                    src="images/gallery/thumbs/phoca_thumb_m_lazzat_0008.jpg"
+                    alt="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."></a>
+              </div>
+
+
+              <div class="gallery-box">
+                <a class="fancybox-gallery" rel="fancybox-gallery"
+                   title="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."
+                   href="images/gallery/thumbs/phoca_thumb_l_lazzat_0009.jpg"><img
+                    src="images/gallery/thumbs/phoca_thumb_m_lazzat_0009.jpg"
+                    alt="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."></a>
+              </div>
+
+
+              <div class="gallery-box">
+                <a class="fancybox-gallery" rel="fancybox-gallery"
+                   title="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."
+                   href="images/gallery/thumbs/phoca_thumb_l_lazzat_0012.jpg"><img
+                    src="images/gallery/thumbs/phoca_thumb_m_lazzat_0012.jpg"
+                    alt="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."></a>
+              </div>
+
+
+              <div class="gallery-box">
+                <a class="fancybox-gallery" rel="fancybox-gallery"
+                   title="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."
+                   href="images/gallery/thumbs/phoca_thumb_l_lazzat_0013.jpg"><img
+                    src="images/gallery/thumbs/phoca_thumb_m_lazzat_0013.jpg"
+                    alt="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."></a>
+              </div>
+
+
+              <div class="gallery-box">
+                <a class="fancybox-gallery" rel="fancybox-gallery"
+                   title="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."
+                   href="images/gallery/thumbs/phoca_thumb_l_lazzat_0014.jpg"><img
+                    src="images/gallery/thumbs/phoca_thumb_m_lazzat_0014.jpg"
+                    alt="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."></a>
+              </div>
+
+
+              <div class="gallery-box">
+                <a class="fancybox-gallery" rel="fancybox-gallery"
+                   title="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."
+                   href="images/gallery/thumbs/phoca_thumb_l_lazzat_0016.jpg"><img
+                    src="images/gallery/thumbs/phoca_thumb_m_lazzat_0016.jpg"
+                    alt="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."></a>
+              </div>
+
+
+              <div class="gallery-box">
+                <a class="fancybox-gallery" rel="fancybox-gallery"
+                   title="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."
+                   href="images/gallery/thumbs/phoca_thumb_l_lazzat_0017.jpg"><img
+                    src="images/gallery/thumbs/phoca_thumb_m_lazzat_0017.jpg"
+                    alt="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."></a>
+              </div>
+
+
+              <div class="gallery-box">
+                <a class="fancybox-gallery" rel="fancybox-gallery"
+                   title="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."
+                   href="images/gallery/thumbs/phoca_thumb_l_lazzat_0019.jpg"><img
+                    src="images/gallery/thumbs/phoca_thumb_m_lazzat_0019.jpg"
+                    alt="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."></a>
+              </div>
+
+
+              <div class="gallery-box">
+                <a class="fancybox-gallery" rel="fancybox-gallery"
+                   title="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."
+                   href="images/gallery/thumbs/phoca_thumb_l_lazzat_0022.jpg"><img
+                    src="images/gallery/thumbs/phoca_thumb_m_lazzat_0022.jpg"
+                    alt="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."></a>
+              </div>
+
+
+              <div class="gallery-box">
+                <a class="fancybox-gallery" rel="fancybox-gallery"
+                   title="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."
+                   href="images/gallery/thumbs/phoca_thumb_l_lazzat_0023.jpg"><img
+                    src="images/gallery/thumbs/phoca_thumb_m_lazzat_0023.jpg"
+                    alt="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."></a>
+              </div>
+
+
+              <div class="gallery-box">
+                <a class="fancybox-gallery" rel="fancybox-gallery"
+                   title="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."
+                   href="images/gallery/thumbs/phoca_thumb_l_lazzat_0025.jpg"><img
+                    src="images/gallery/thumbs/phoca_thumb_m_lazzat_0025.jpg"
+                    alt="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."></a>
+              </div>
+
+
+              <div class="gallery-box">
+                <a class="fancybox-gallery" rel="fancybox-gallery"
+                   title="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."
+                   href="images/gallery/thumbs/phoca_thumb_l_lazzat_0026.jpg"><img
+                    src="images/gallery/thumbs/phoca_thumb_m_lazzat_0026.jpg"
+                    alt="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."></a>
+              </div>
+
+
+              <div class="gallery-box">
+                <a class="fancybox-gallery" rel="fancybox-gallery"
+                   title="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."
+                   href="images/gallery/thumbs/phoca_thumb_l_lazzat_0028.jpg"><img
+                    src="images/gallery/thumbs/phoca_thumb_m_lazzat_0028.jpg"
+                    alt="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."></a>
+              </div>
+
+
+              <div class="gallery-box">
+                <a class="fancybox-gallery" rel="fancybox-gallery"
+                   title="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."
+                   href="images/gallery/thumbs/phoca_thumb_l_lazzat_0029.jpg"><img
+                    src="images/gallery/thumbs/phoca_thumb_m_lazzat_0029.jpg"
+                    alt="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."></a>
+              </div>
+
+
+              <div class="gallery-box">
+                <a class="fancybox-gallery" rel="fancybox-gallery"
+                   title="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."
+                   href="images/gallery/thumbs/phoca_thumb_l_lazzat_0030.jpg"><img
+                    src="images/gallery/thumbs/phoca_thumb_m_lazzat_0030.jpg"
+                    alt="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."></a>
+              </div>
+
+
+              <div class="gallery-box">
+                <a class="fancybox-gallery" rel="fancybox-gallery"
+                   title="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."
+                   href="images/gallery/thumbs/phoca_thumb_l_lazzat_0031.jpg"><img
+                    src="images/gallery/thumbs/phoca_thumb_m_lazzat_0031.jpg"
+                    alt="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."></a>
+              </div>
+
+
+              <div class="gallery-box">
+                <a class="fancybox-gallery" rel="fancybox-gallery"
+                   title="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."
+                   href="images/gallery/thumbs/phoca_thumb_l_lazzat_0032.jpg"><img
+                    src="images/gallery/thumbs/phoca_thumb_m_lazzat_0032.jpg"
+                    alt="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."></a>
+              </div>
+
+
+              <div class="gallery-box">
+                <a class="fancybox-gallery" rel="fancybox-gallery"
+                   title="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."
+                   href="images/gallery/thumbs/phoca_thumb_l_lazzat_0034.jpg"><img
+                    src="images/gallery/thumbs/phoca_thumb_m_lazzat_0034.jpg"
+                    alt="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."></a>
+              </div>
+
+
+              <div class="gallery-box">
+                <a class="fancybox-gallery" rel="fancybox-gallery"
+                   title="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."
+                   href="images/gallery/thumbs/phoca_thumb_l_lazzat_0035.jpg"><img
+                    src="images/gallery/thumbs/phoca_thumb_m_lazzat_0035.jpg"
+                    alt="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."></a>
+              </div>
+
+
+              <div class="gallery-box">
+                <a class="fancybox-gallery" rel="fancybox-gallery"
+                   title="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."
+                   href="images/gallery/thumbs/phoca_thumb_l_lazzat_0036.jpg"><img
+                    src="images/gallery/thumbs/phoca_thumb_m_lazzat_0036.jpg"
+                    alt="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."></a>
+              </div>
+
+
+              <div class="gallery-box">
+                <a class="fancybox-gallery" rel="fancybox-gallery"
+                   title="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."
+                   href="images/gallery/thumbs/phoca_thumb_l_lazzat_0038.jpg"><img
+                    src="images/gallery/thumbs/phoca_thumb_m_lazzat_0038.jpg"
+                    alt="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."></a>
+              </div>
+
+
+              <div class="gallery-box">
+                <a class="fancybox-gallery" rel="fancybox-gallery"
+                   title="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."
+                   href="images/gallery/thumbs/phoca_thumb_l_lazzat_0040.jpg"><img
+                    src="images/gallery/thumbs/phoca_thumb_m_lazzat_0040.jpg"
+                    alt="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."></a>
+              </div>
+
+
+              <div class="gallery-box">
+                <a class="fancybox-gallery" rel="fancybox-gallery"
+                   title="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."
+                   href="images/gallery/thumbs/phoca_thumb_l_lazzat_0041.jpg"><img
+                    src="images/gallery/thumbs/phoca_thumb_m_lazzat_0041.jpg"
+                    alt="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."></a>
+              </div>
+
+
+              <div class="gallery-box">
+                <a class="fancybox-gallery" rel="fancybox-gallery"
+                   title="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."
+                   href="images/gallery/thumbs/phoca_thumb_l_lazzat_0042.jpg"><img
+                    src="images/gallery/thumbs/phoca_thumb_m_lazzat_0042.jpg"
+                    alt="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."></a>
+              </div>
+
+
+              <div class="gallery-box">
+                <a class="fancybox-gallery" rel="fancybox-gallery"
+                   title="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."
+                   href="images/gallery/thumbs/phoca_thumb_l_lazzat_0043.jpg"><img
+                    src="images/gallery/thumbs/phoca_thumb_m_lazzat_0043.jpg"
+                    alt="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."></a>
+              </div>
+
+
+              <div class="gallery-box">
+                <a class="fancybox-gallery" rel="fancybox-gallery"
+                   title="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."
+                   href="images/gallery/thumbs/phoca_thumb_l_lazzat_0044.jpg"><img
+                    src="images/gallery/thumbs/phoca_thumb_m_lazzat_0044.jpg"
+                    alt="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."></a>
+              </div>
+
+
+              <div class="gallery-box">
+                <a class="fancybox-gallery" rel="fancybox-gallery"
+                   title="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."
+                   href="images/gallery/thumbs/phoca_thumb_l_lazzat_0045.jpg"><img
+                    src="images/gallery/thumbs/phoca_thumb_m_lazzat_0045.jpg"
+                    alt="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."></a>
+              </div>
+
+
+              <div class="gallery-box">
+                <a class="fancybox-gallery" rel="fancybox-gallery"
+                   title="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."
+                   href="images/gallery/thumbs/phoca_thumb_l_lazzat_0046.jpg"><img
+                    src="images/gallery/thumbs/phoca_thumb_m_lazzat_0046.jpg"
+                    alt="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."></a>
+              </div>
+
+
+              <div class="gallery-box">
+                <a class="fancybox-gallery" rel="fancybox-gallery"
+                   title="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."
+                   href="images/gallery/thumbs/phoca_thumb_l_lazzat_0047.jpg"><img
+                    src="images/gallery/thumbs/phoca_thumb_m_lazzat_0047.jpg"
+                    alt="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."></a>
+              </div>
+
+
+              <div class="gallery-box">
+                <a class="fancybox-gallery" rel="fancybox-gallery"
+                   title="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."
+                   href="images/gallery/thumbs/phoca_thumb_l_lazzat_0053.jpg"><img
+                    src="images/gallery/thumbs/phoca_thumb_m_lazzat_0053.jpg"
+                    alt="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."></a>
+              </div>
+
+
+              <div class="gallery-box">
+                <a class="fancybox-gallery" rel="fancybox-gallery"
+                   title="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."
+                   href="images/gallery/thumbs/phoca_thumb_l_lazzat_0054.jpg"><img
+                    src="images/gallery/thumbs/phoca_thumb_m_lazzat_0054.jpg"
+                    alt="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."></a>
+              </div>
+
+
+              <div class="gallery-box">
+                <a class="fancybox-gallery" rel="fancybox-gallery"
+                   title="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."
+                   href="images/gallery/thumbs/phoca_thumb_l_lazzat_0055.jpg"><img
+                    src="images/gallery/thumbs/phoca_thumb_m_lazzat_0055.jpg"
+                    alt="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."></a>
+              </div>
+
+
+              <div class="gallery-box">
+                <a class="fancybox-gallery" rel="fancybox-gallery"
+                   title="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."
+                   href="images/gallery/thumbs/phoca_thumb_l_lazzat_0057.jpg"><img
+                    src="images/gallery/thumbs/phoca_thumb_m_lazzat_0057.jpg"
+                    alt="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."></a>
+              </div>
+
+
+              <div class="gallery-box">
+                <a class="fancybox-gallery" rel="fancybox-gallery"
+                   title="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."
+                   href="images/gallery/thumbs/phoca_thumb_l_lazzat_0058.jpg"><img
+                    src="images/gallery/thumbs/phoca_thumb_m_lazzat_0058.jpg"
+                    alt="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."></a>
+              </div>
+
+
+              <div class="gallery-box">
+                <a class="fancybox-gallery" rel="fancybox-gallery"
+                   title="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."
+                   href="images/gallery/thumbs/phoca_thumb_l_lazzat_0059.jpg"><img
+                    src="images/gallery/thumbs/phoca_thumb_m_lazzat_0059.jpg"
+                    alt="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."></a>
+              </div>
+
+
+              <div class="gallery-box">
+                <a class="fancybox-gallery" rel="fancybox-gallery"
+                   title="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."
+                   href="images/gallery/thumbs/phoca_thumb_l_lazzat_0060.jpg"><img
+                    src="images/gallery/thumbs/phoca_thumb_m_lazzat_0060.jpg"
+                    alt="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."></a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="content col-min">
+          <div class="col1">
+            <h2>Доставка обедов <span class="phone">640-22-72</span></h2>
+            <h2>
+              Доставка обедов 
+              <div class="phone">
+                <img src="images/phone.png" alt="Телефон:" />
+                640-22-72
+              </div>
+            </h2>
+            <p class="first">Минимальная сумма заказа&nbsp;– 800&nbsp;рублей.<br />
+              Заказ обеда по схеме «сегодня&nbsp;на&nbsp;завтра». Прием&nbsp;заказа&nbsp;до&nbsp;16-00.</p>
+            <p>Обеды доставляются в одноразовой упаковке.<br />
+              Доставка обедов по всей Москве и Подмосковью.</p>
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="social">
+            <h2><span class="social-min">Присоединяйтесь:</span> <span class="social-wide">Наши новости в социальных сетях:</span>
+              <a href="http://vk.com/plovepasta" target="_blank">
+                <span class="vk"></span></a>
+              <a href="http://www.facebook.com/pages/PlovePasta/287689691351714" target="_blank">
+                <span class="fb"></span></a>
+              <a href="https://twitter.com/PovePasta" target="_blank">
+                <span class="tw"></span></a>
+            </h2>
+          </div>
+        </div>
+        <!-- #content-->
+
+        <footer id="footer">
+          <div class="footer_contacts">
+            <div class="tel"><span>Телефон:</span> <span class="cod_tel">(495)</span> 640-22-72</div>
+            <span>Адрес:</span> г. Москва, Алтуфьевское ш., 48, к. 1
+            <br /><br />
+            <div id="live_internet">
+              <!--LiveInternet counter--><script type="text/javascript"><!--
+                document.write("<a href='http://www.liveinternet.ru/click' " +
+                        "target=_blank><img src='//counter.yadro.ru/hit?t18.5;r" +
+                        escape(document.referrer) + ((typeof(screen) == "undefined") ? "" :
+                        ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ?
+                        screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) +
+                        ";h" + escape(document.title.substring(0, 80)) + ";" + Math.random() +
+                        "' alt='' title='LiveInternet: показано число просмотров за 24" +
+                        " часа, посетителей за 24 часа и за сегодня' " +
+                        "border='0' width='88' height='31'><\/a>")
+                        //--></script><!--/LiveInternet-->
+            </div>
+          </div>
+          <div class="copyright">
+            © 2012 «Plove & Pasta»<br />
+            Банкеты Алтуфьево недорого, бизнес-ланч&nbsp;Алтуфьево&nbsp;недорого.
+          </div>
+        </footer><!-- #footer -->
+
+      </div><!-- #wrapper -->
+      <!-- Yandex.Metrika counter -->
+      <script type="text/javascript">
+                        (function(d, w, c) {
+                          (w[c] = w[c] || []).push(function() {
+                            try {
+                              w.yaCounter17635372 = new Ya.Metrika({id: 17635372, enableAll: true, webvisor: true});
+                            } catch (e) {
+                            }
+                          });
+
+                          var n = d.getElementsByTagName("script")[0],
+                                  s = d.createElement("script"),
+                                  f = function() {
+                            n.parentNode.insertBefore(s, n);
+                          };
+                          s.type = "text/javascript";
+                          s.async = true;
+                          s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+                          if (w.opera == "[object Opera]") {
+                            d.addEventListener("DOMContentLoaded", f);
+                          } else {
+                            f();
+                          }
+                        })(document, window, "yandex_metrika_callbacks");
+      </script>
+      <noscript><div><img src="//mc.yandex.ru/watch/17635372" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+      <!-- /Yandex.Metrika counter -->
+  </body>
+</html>

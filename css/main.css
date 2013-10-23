@@ -1,0 +1,62 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body,
+.page-content {
+  font-family: didact_gothicregular;
+  font-size: 1.23em;
+}
+
+.page-content a,
+#divFooter {
+  font-family: didact_gothicregular;
+}
+
+#divSiteTitle {
+  font-family: Lasco;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: gardensc;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+.container {
+  padding: 0;
+}
+
+a.thumbnail:hover,
+a.thumbnail:focus {
+  border-color: rgb(212, 50, 32);
+}
+
+.navbar .nav-pills > li > a {
+  padding: 6px 12px 3px;
+}
+
+.navbar .nav-pills > .active > a,
+.navbar .nav-pills > .active > a:hover,
+.navbar .nav-pills li.dropdown.open > .dropdown-toggle,
+.navbar .nav-pills li.dropdown.active > .dropdown-toggle {
+  background-color: rgb(212, 50, 32);
+}
+
+.navbar .nav-pills > li > a:hover,
+.navbar .nav li.dropdown.open.active > .dropdown-toggle {
+  color: #fff;
+  background-color: rgb(212, 14, 0);
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  background-color: rgb(212, 14, 0);
+}
+

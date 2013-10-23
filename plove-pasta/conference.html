@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <title>Зал для конференций</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+      <link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection" />
+      <link rel="stylesheet" href="css/responsiveslides.css" type="text/css" media="screen, projection" />
+      <link rel="stylesheet" href="css/responsivestyle.css" type="text/css" media="screen, projection" />
+      <!--[if lt IE 9]>
+        <script src="js/css3-mediaqueries.js"></script>
+      <![endif]-->
+
+      <!--[if IE 7]>
+        <link href="css/ie7.css" rel="stylesheet" type="text/css">
+      <![endif]-->
+
+      <!--[if IE 8]>
+        <link href="css/ie8.css" rel="stylesheet" type="text/css">
+      <![endif]-->
+
+      <script src="js/libs/jquery/jquery-1.8.2.min.js"></script>
+      <script src="js/slides.js"></script>
+
+      <!-- Add mousewheel plugin (this is optional) -->
+      <script type="text/javascript"
+      src="js/libs/jquery/jquery.mousewheel-3.0.6.pack.js"></script>
+
+      <!-- Add fancyBox main JS and CSS files -->
+      <script type="text/javascript"
+      src="js/libs/jquery/fancybox/jquery.fancybox.js"></script>
+      <link rel="stylesheet" type="text/css"
+            href="js/libs/jquery/fancybox/jquery.fancybox.css" media="screen" />
+
+      <!-- Add Button helper (this is optional) -->
+      <link rel="stylesheet" type="text/css"
+            href="js/libs/jquery/fancybox/helpers/jquery.fancybox-buttons.css" />
+      <script type="text/javascript"
+      src="js/libs/jquery/fancybox/helpers/jquery.fancybox-buttons.js"></script>
+
+      <!-- Add Thumbnail helper (this is optional) -->
+      <link rel="stylesheet" type="text/css"
+            href="js/libs/jquery/fancybox/helpers/jquery.fancybox-thumbs.css" />
+      <script type="text/javascript"
+      src="js/libs/jquery/fancybox/helpers/jquery.fancybox-thumbs.js"></script>
+
+      <!-- Add Media helper (this is optional) -->
+      <script type="text/javascript"
+      src="js/libs/jquery/fancybox/helpers/jquery.fancybox-media.js"></script>
+
+      <!-- IE gallery fix) -->
+      <script>
+        $(function() {
+          $('#gallery-conf .gallery-box:nth-child(3n+3)').css('padding-right', 8);
+          $('#gallery-conf .gallery-box:nth-child(5)').css('padding-right', 0);
+          $('#gallery-conf .gallery-box:first-child').css('padding-right', 0);
+        });
+      </script>
+
+      <script>
+        $(function() {
+          $("#slides").slides();
+        });
+
+        jQuery(function($) {
+          $(".fancybox-gallery").fancybox({
+            prevEffect: 'none',
+            nextEffect: 'none',
+            closeBtn: false,
+            helpers: {
+              title: {type: 'inside'},
+              buttons: {}
+            }
+          });
+        });
+      </script>
+
+      <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-35531238-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script');
+          ga.type = 'text/javascript';
+          ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(ga, s);
+        })();
+
+      </script>
+  </head>
+
+  <body>
+    <div id="bg_tel"></div>
+    <div id="wrapper">
+
+      <header id="header">
+        <div>
+          <a href="http://lazzat-cafe.ru/"><div class="logo"></div></a>
+        </div>
+
+        <div class="contacts">
+          <div class="tel"><span class="cod_tel">(495)</span> 640-22-72</div>
+          г. Москва, Алтуфьевское ш., 48, к.1
+        </div>
+        <div class="slogan">
+
+          Кафе «Плов и паста» в&nbsp;Алтуфьево Восточная&nbsp;и&nbsp;Европейская&nbsp;кухня
+
+        </div>
+      </header><!-- #header-->
+
+      <div id="container">
+
+        <div class="navigation">
+          <ul class="nav">
+            <li class="left">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="">
+              <a href="menu.html">Меню</a>
+            </li>
+            <li class="">
+              <a href="gallery.html">Фотогалерея</a>
+            </li>
+            <li class="active">
+              <a href="banquets.html">Предложения</a>
+            </li>
+            <li class="right">
+              <a href="contact.html">Контакты</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="content col-min">
+          <div class="col1">
+            <h2><span>Наши </span>предложения</h2>
+            <h2>
+              Предложения кафе<br />
+              PLOVE & PASTA
+            </h2>
+            <ul class="menu-deals">
+              <li class=""><a
+                  href="businesslunch.html">Бизнес-ланч</a></li>
+              <li class=""><a
+                  href="wedding.html">Свадьбы, Юбилеи, Банкеты</a></li>
+              <li class=""><a
+                  href="childevents.html">Детские праздники</a></li>
+              <li class=""><a
+                  href="sportsbroadcast.html">Спортивные трансляции</a></li>
+              <li class="active"><a
+                  href="conference.html">Зал для конференций</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="content clearfix">
+          <div class="col1">            
+            <h2>Предложения</h2>
+            <ul class="menu-deals">
+              <li class=""><a
+                  href="businesslunch.html">Бизнес-ланч</a></li>
+              <li class=""><a
+                  href="wedding.html">Свадьбы, Юбилеи, Банкеты</a></li>
+              <li class=""><a
+                  href="childevents.html">Детские праздники</a></li>
+              <li class=""><a
+                  href="sportsbroadcast.html">Спортивные трансляции</a></li>
+              <li class="active"><a
+                  href="conference.html">Зал для конференций</a></li>	
+            </ul>	
+
+            <h2>Фотоальбом</h2>
+            <div class="deal_img">
+              <img src="images/deal_1.jpg" alt="Бизнес-Ланч" />
+              <p><em><a href="gallery.html">Смотреть все фотографии</a></em></p>
+            </div>
+          </div>
+          <div class="col2">
+            <h1>Наши предложения: <span>Зал для конференций</span></h1>
+            <br />
+            <div id="gallery-conf">
+
+              <div class="gallery-box">
+                <a class="fancybox-gallery" rel="fancybox-gallery"
+                   title="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."
+                   href="images/gallery/thumbs/phoca_thumb_l_lazzat_0043.jpg"><img
+                    src="images/gallery/thumbs/m_conference_01.jpg"
+                    alt="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."></a>
+              </div>
+
+
+              <div class="gallery-box">
+                <a class="fancybox-gallery" rel="fancybox-gallery"
+                   title="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."
+                   href="images/gallery/thumbs/phoca_thumb_l_lazzat_0045.jpg"><img
+                    src="images/gallery/thumbs/m_conference_02.jpg"
+                    alt="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."></a>
+              </div>
+
+
+              <div class="gallery-box">
+                <a class="fancybox-gallery" rel="fancybox-gallery"
+                   title="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."
+                   href="images/gallery/thumbs/phoca_thumb_l_lazzat_0046.jpg"><img
+                    src="images/gallery/thumbs/m_conference_03.jpg"
+                    alt="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."></a>
+              </div>
+
+
+              <div class="gallery-box">
+                <a class="fancybox-gallery" rel="fancybox-gallery"
+                   title="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."
+                   href="images/gallery/thumbs/phoca_thumb_l_lazzat_0044.jpg"><img
+                    src="images/gallery/thumbs/m_conference_04.jpg"
+                    alt="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."></a>
+              </div>
+
+
+              <div class="gallery-box">
+                <a class="fancybox-gallery" rel="fancybox-gallery"
+                   title="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."
+                   href="images/gallery/thumbs/phoca_thumb_l_lazzat_0047.jpg"><img
+                    src="images/gallery/thumbs/m_conference_05.jpg"
+                    alt="Кафе «Плов и паста» в Алтуфьево, тел. (495) 640-22-72."></a>
+              </div>
+
+            </div>
+
+            <div class="deal-page">
+              <p>К Вам приехали деловые партнёры, а у Вас нет зала для переговоров?</p>
+              <p>Мы предлагаем отдельный зал на 40 человек для проведения конференции, переговоров, презентаций и&nbsp;многого другого. <br />Зал оснащен всем необходимым для этого.</p>
+              <p>По вопросам проведения конференций обращайтесь по телефону:<br><br><img src="images/phone.png" alt="" style="margin-bottom: -5px; margin-right: 10px;" /><font style="font-size: 20px;">+7 (909) 980-60-70</font></p>
+                    </div>
+                    <br />
+                    <div class="scheme">
+                      <h2>Схема расстановки столиков в Зале для Конференций:</h2>
+                      <table>
+                        <tr>
+                          <td class="bg_scheme">
+                            15 участников
+                            <div>
+                              <img src="images/stolik_15.png" alt="15 участников" /><p>«U-shape»</p>
+                            </div>
+                          </td>
+                          <td class="bg_scheme no-padding">
+                            20 участников
+                            <div>
+                              <img src="images/stolik_20.png" alt="20 участников" /><p>«Круглый стол»</p>
+                            </div>
+                          </td>
+                          <td class="bg_scheme">
+                            24 участника
+                            <div>
+                              <img src="images/stolik_24.png" alt="24 участника" /><p>«Класс»</p>
+                            </div>
+                          </td>
+                          <td class="bg_scheme no-padding">
+                            40 участников
+                            <div>
+                              <img src="images/stolik_40.png" alt="40 участников" /><p>«Театр»</p>
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    </div>
+                    </div>
+
+                    <div class="content col-min">
+                      <div class="col1 deal_img">
+                        <h2>Фотоальбом</h2>
+                        <h2>
+                          Фотоальбом кафе<br />Plove&Pasta
+                          <p><em><a href="gallery.html">Смотреть все фотографии</a></em></p>
+                        </h2>
+                        <div>
+                          <img src="images/gallery/thumbs/phoca_thumb_m_lazzat_0038.jpg" alt="Бизнес-Ланч" />
+                          <img src="images/gallery/thumbs/phoca_thumb_m_lazzat_0042.jpg" alt="Свадьбы, юбилеи, банкеты" />
+                          <img src="images/gallery/thumbs/phoca_thumb_m_lazzat_0050.jpg" alt="Детские праздники" class="deal_img-min"/>
+                          <p><em><a href="gallery.html">Смотреть все фотографии</a></em></p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="content">
+                      <div class="social">
+                        <h2><span class="social-min">Присоединяйтесь:</span> <span class="social-wide">Наши новости в социальных сетях:</span>
+                          <a href="http://vk.com/plovepasta" target="_blank">
+                            <span class="vk"></span></a>
+                          <a href="http://www.facebook.com/pages/PlovePasta/287689691351714" target="_blank">
+                            <span class="fb"></span></a>
+                          <a href="https://twitter.com/PovePasta" target="_blank">
+                            <span class="tw"></span></a>
+                        </h2>
+                      </div>
+                    </div>
+
+                    </div><!-- #content-->
+
+                    <footer id="footer">
+                      <div class="footer_contacts">
+                        <div class="tel"><span>Телефон:</span> <span class="cod_tel">(495)</span> 640-22-72</div>
+                        <span>Адрес:</span> г. Москва, Алтуфьевское ш., 48, к. 1
+                        <br /><br />
+                        <div id="live_internet">
+                          <!--LiveInternet counter--><script type="text/javascript"><!--
+                            document.write("<a href='http://www.liveinternet.ru/click' " +
+                                    "target=_blank><img src='//counter.yadro.ru/hit?t18.5;r" +
+                                    escape(document.referrer) + ((typeof(screen) == "undefined") ? "" :
+                                    ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ?
+                                    screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) +
+                                    ";h" + escape(document.title.substring(0, 80)) + ";" + Math.random() +
+                                    "' alt='' title='LiveInternet: показано число просмотров за 24" +
+                                    " часа, посетителей за 24 часа и за сегодня' " +
+                                    "border='0' width='88' height='31'><\/a>")
+                                    //--></script><!--/LiveInternet-->
+                        </div>
+                      </div>
+                      <div class="copyright">
+                        © 2012 «Plove & Pasta»<br />
+                        Банкеты Алтуфьево недорого, бизнес-ланч&nbsp;Алтуфьево&nbsp;недорого.
+                      </div>
+                    </footer><!-- #footer -->
+
+                    </div><!-- #wrapper -->
+                    <!-- Yandex.Metrika counter -->
+                    <script type="text/javascript">
+                                      (function(d, w, c) {
+                                        (w[c] = w[c] || []).push(function() {
+                                          try {
+                                            w.yaCounter17635372 = new Ya.Metrika({id: 17635372, enableAll: true, webvisor: true});
+                                          } catch (e) {
+                                          }
+                                        });
+
+                                        var n = d.getElementsByTagName("script")[0],
+                                                s = d.createElement("script"),
+                                                f = function() {
+                                          n.parentNode.insertBefore(s, n);
+                                        };
+                                        s.type = "text/javascript";
+                                        s.async = true;
+                                        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+                                        if (w.opera == "[object Opera]") {
+                                          d.addEventListener("DOMContentLoaded", f);
+                                        } else {
+                                          f();
+                                        }
+                                      })(document, window, "yandex_metrika_callbacks");
+                    </script>
+                    <noscript><div><img src="//mc.yandex.ru/watch/17635372" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+                    <!-- /Yandex.Metrika counter -->
+                    </body>
+                    </html>

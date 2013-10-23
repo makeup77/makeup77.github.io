@@ -1,0 +1,2292 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <title>Меню</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+      <link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection" />
+      <link rel="stylesheet" href="css/responsiveslides.css" type="text/css" media="screen, projection" />
+      <link rel="stylesheet" href="css/responsivestyle.css" type="text/css" media="screen, projection" />
+      <!--[if lt IE 9]>
+        <script src="js/css3-mediaqueries.js"></script>
+      <![endif]-->
+
+      <!--[if IE 7]>
+        <link href="css/ie7.css" rel="stylesheet" type="text/css">
+      <![endif]-->
+
+      <!--[if IE 8]>
+        <link href="css/ie8.css" rel="stylesheet" type="text/css">
+      <![endif]-->
+
+      <script src="/js/libs/jquery/jquery-1.8.2.min.js"></script>
+      <script src="js/slides.js"></script>
+      <script>
+        $(function() {
+          $("#slides").slides();
+        });
+
+        $(function () {
+          var tothetop = '<div id="to-top">'
+            +'<a href="#header">Наверх</a>'
+            +'</div>';
+          $(tothetop).appendTo('.content').hide();
+          $(document).bind('scroll', function() {
+            //Get position at middle of window, then position at bottom of entry content
+            var scrollposition = $(this).scrollTop() + ($(window).height() / 2);
+            var contentend = $(window).height();
+            if(scrollposition >= contentend) {
+              if($('#to-top').is(':hidden')) {
+                $('#to-top').show(200);
+              }
+
+              if(scrollposition > $('.content').height()-170) {
+                $('#to-top').addClass('btm');}
+              else {$('#to-top').removeClass('btm');}
+
+
+            } else if($('#to-top').is(':visible')) {
+              $('#to-top').hide(100);
+            }
+          });
+        });
+      </script> 
+
+      <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-35531238-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+      </script>
+  </head>
+
+  <body>
+    <div id="bg_tel"></div>
+    <div id="wrapper">
+
+      <header id="header">
+        <div>
+          <a href="http://lazzat-cafe.ru/"><div class="logo"></div></a>
+        </div>
+
+        <div class="contacts">
+          <div class="tel"><span class="cod_tel">(495)</span> 640-22-72</div>
+          г. Москва, Алтуфьевское ш., 48, к.1
+        </div>
+        <div class="slogan">
+
+          Кафе «Плов и паста» в&nbsp;Алтуфьево Восточная&nbsp;и&nbsp;Европейская&nbsp;кухня
+
+        </div>
+      </header><!-- #header-->
+
+      <div id="container">
+
+        <div class="navigation">
+          <ul class="nav">
+            <li class="left">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="active">
+              <a href="menu.html">Меню</a>
+            </li>
+            <li class="">
+              <a href="gallery.html">Фотогалерея</a>
+            </li>
+            <li class="">
+              <a href="banquets.html">Предложения</a>
+            </li>
+            <li class="right">
+              <a href="contact.html">Контакты</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="content clearfix">
+          <div class="col1">
+            <h2>Предложения</h2>
+            <ul class="menu-deals">
+              <li class=""><a
+                  href="businesslunch.html">Бизнес-ланч</a></li>
+              <li class=""><a
+                  href="wedding.html">Свадьбы, Юбилеи, Банкеты</a></li>
+              <li class=""><a
+                  href="childevents.html">Детские праздники</a></li>
+              <li class=""><a
+                  href="sportsbroadcast.html">Спортивные трансляции</a></li>
+              <li class=""><a
+                  href="conference.html">Зал для конференций</a></li>	
+            </ul>						
+						
+            <h2>Меню</h2>
+            <div id="menu_subsec">
+              Восточная кухня</div>
+            <ul id="menu-nav">
+              <li>
+                <a href="#Salaty_vostochnoy_kukhni">Салаты</a></li>
+              <li>
+                <a href="#Kholodnye_zakuski_vostochnoy_kukhni">Холодные закуски</a></li>
+              <li>
+                <a href="#Supy_vostochnoy_kukhni">Супы</a></li>
+              <li>
+                <a href="#Goryachie_blyuda_vostochnoy_kukhni">Горячие блюда</a></li>
+              <li>
+                <a href="#Shashlyki">Шашлыки, приготовленые<br />
+                  на углях</a></li>
+              <li>
+                <a href="#Sousy_vostochnoy_kukhni">Соусы</a></li>
+              <li>
+                <a href="#Vypechka_vostochnoy_kukhni">Выпечка</a></li>
+              <li>
+                <a href="#Deserty_vostochnoy_kukhni">Десерты</a></li>
+            </ul>
+            <div id="menu_subsec">
+              Европейская кухня</div>
+            <ul id="menu-nav">
+              <li>
+                <a href="#Salaty">Салаты</a></li>
+              <li>
+                <a href="#Kholodnye_zakuski_evropeyskoy_kukhni">Холодные закуски</a></li>
+              <li>
+                <a href="#Goryachie_zakuski_evropeyskoy_kukhni">Горячие закуски</a></li>
+              <li>
+                <a href="#Supy_evropeyskoy_kukhni">Супы</a></li>
+              <li>
+                <a href="#Blyuda_iz_ryby">Блюда из рыбы</a></li>
+              <li>
+                <a href="#Blyuda_iz_myasa">Блюда из мяса</a></li>
+              <li>
+                <a href="#Garniry">Гарниры</a></li>
+              <li>
+                <a href="#Pasty">Пасты</a></li>
+              <li>
+                <a href="#Deserty_evropeyskoy_kukhni">Десерты</a></li>
+            </ul>
+            <div id="menu_subsec">
+              Кофе-брэйки</div>
+            <ul id="menu-nav">
+              <li>
+                <a href="#Napitki">Напитки</a></li>
+              <li>
+                <a href="#Zakuski">Закуски</a></li>
+              <li>
+                <a href="#Vypechka_i_Deserty">Выпечка и десерты</a></li>
+            </ul>
+            <div id="menu_subsec">
+              Крепкие алкогольные<br />
+              напитки</div>
+            <ul id="menu-nav">
+              <li>
+                <a href="#Vodka">Водка</a></li>
+              <li>
+                <a href="#Viski">Виски</a></li>
+              <li>
+                <a href="#Konyak">Коньяк</a></li>
+              <li>
+                <a href="#Rom">Ром</a></li>
+              <li>
+                <a href="#Tekila">Текила</a></li>
+              <li>
+                <a href="#Dzhin">Джин</a></li>
+              <li>
+                <a href="#Gorkie_nastoyki">Горькие настойки</a></li>
+              <li>
+                <a href="#Vermut">Вермут</a></li>
+              <li>
+                <a href="#Likery">Ликеры</a></li>
+            </ul>
+            <div id="menu_subsec">
+              Вино</div>
+            <ul id="menu-nav">
+              <li>
+                <a href="#Igristoe_vino">Игристое вино</a></li>
+              <li>
+                <a href="#Beloe_vino">Белое вино</a></li>
+              <li>
+                <a href="#Krasnoe_vino">Красное вино</a></li>
+            </ul>
+            <div id="menu_subsec">
+              Коктейли</div>
+            <ul id="menu-nav">
+              <li>
+                <a href="#Alkogolnye_kokteyli">Алкогольные коктейли</a></li>
+              <li>
+                <a href="#Bezalkogolnye_kokteyli">Безалкогольные коктейли</a></li>
+            </ul>
+            <div id="menu_subsec">
+              Пиво</div>
+            <ul id="menu-nav">
+              <li>
+                <a href="#Razlivnoe_pivo">Разливное пиво</a></li>
+              <li>
+                <a href="#Pivo_butylochnoe">Пиво бутылочное</a></li>
+            </ul>
+            <div id="menu_subsec">
+              Безалкогольные напитки</div>
+            <ul id="menu-nav">
+              <li>
+                <a href="#Mineralnaya_voda">Минеральная вода</a></li>
+              <li>
+                <a href="#Svezhevyzhatye_soki">Свежевыжатые соки</a></li>
+              <li>
+                <a href="#soki">Соки</a></li>
+              <li>
+                <a href="#Gazirovannye_napitki">Газированные напитки</a></li>
+              <li>
+                <a href="#Cofe">Кофе</a></li>
+              <li>
+                <a href="#Tea">Чай</a></li>
+            </ul>
+            <div id="menu_subsec">
+              Барное меню</div>
+            <ul id="menu-nav">
+              <li>
+                <a href="#Zakuski_k_ pivu">Закуски к пиву</a></li>
+              <li>
+                <a href="#Sousy_bar">Соусы</a></li>
+            </ul>
+            <div id="menu_subsec">
+              Сигареты</div>
+            <ul id="menu-nav">
+              <li>
+                <a href="#Sigarety">Сигаретный набор</a></li>
+            </ul>
+
+          </div>
+          <div class="col2">
+            <h1 class="download">Меню кафе «PLOVE&nbsp;&&nbsp;PASTA»</h1>
+            <ul id="menu-nav">
+              <li><a href="#vostochnaja-kuchnja">Восточная кухня</a></li>
+              <li><a href="#Evropeyskaya_kukhnya">Европейская кухня</a></li>
+              <li><a href="#Menyu_kofe_breykov">Кофе-брэйки</a></li>
+              <li><a href="#krepkie-alkogolnie-napitki">Крепкие алкогольные напитки</a></li>
+              <li><a href="#vino">Вино</a></li>
+              </ul>
+            <ul id="menu-nav">
+              <li><a href="#kokteili">Коктейли</a></li>
+              <li><a href="#pivo-category">Пиво</a></li>
+              <li><a href="#bezalkogolnie-napitki">Безалкогольные напитки</a></li>
+              <li><a href="#barnoe-menu">Барное меню</a></li>
+              <li><a href="#Sigarety">Сигареты</a></li>
+            </ul>
+            <table border="0" cellpadding="5" cellspacing="0" id="menu" width="100%">
+              <tbody>
+                <tr>
+                  <td class="menu-category" colspan="2">
+                    <h2><a name="vostochnaja-kuchnja"></a>
+                      Восточная кухня</h2>
+                    <br />
+                    <h3 id="salaty" style="display:inline;">
+                      <a id="Salaty_vostochnoy_kukhni" name="Salaty_vostochnoy_kukhni"></a>Салаты восточной кухни</h3>
+                    <div id="menu-price">
+                      <span class="price-note">*</span> Все цены указаны в&nbsp;рублях</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><span class="dish"><strong>Салат &laquo;Арафат&raquo;</strong> (160гр.)</span></span><br />
+                    Нежная отварная телятина, капуста, морковь, свекла, соленый огурец, майонез, картофель-пай.</td>
+                  <td>
+                    <strong style="white-space: nowrap;">280 <span class="price-note">*</span></strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Салат &laquo;Лаззат&raquo;</strong> (250гр.)</span><br />
+                    Отварная телятина, говяжий язык, сыр, майонез.</td>
+                  <td>
+                    <strong>300</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Салат &laquo;Инча&raquo;</strong> (150гр.)</span><br />
+                    Курица, капуста, морковь, яйцо перепелиное, майонез, картофель-пай.</td>
+                  <td>
+                    <strong>200</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Салат &laquo;Мафтуна&raquo;</strong> (150гр.)</span><br />
+                    Свежие огурцы, солёные огурцы, маслины, оливки, язык говяжий отварной, майонез, хрен, зелень.</td>
+                  <td>
+                    <strong>220</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Салат &laquo;Аччик-чучук&raquo;</strong> (150гр.)</span><br />
+                    Сочные помидоры с острым перцем и луком.</td>
+                  <td>
+                    <strong>200</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Салат &laquo;Бухара&raquo;</strong> (150гр.)</span><br />
+                    Сочные помидоры и огурцы, репчатый лук, оливковое масло и базилик.</td>
+                  <td>
+                    <strong>180</strong></td>
+                </tr>
+                <tr>
+                  <td class="menu-category" colspan="2">
+                    <h3 id="holodnye-zakuski">
+                      <a id="Kholodnye_zakuski_vostochnoy_kukhni" name="Kholodnye_zakuski_vostochnoy_kukhni"></a>Холодные закуски восточной кухни</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Казы татарские</strong> (50гр./30гр.)</span><br />
+                    Сыровяленая колбаса из конины.</td>
+                  <td>
+                    <strong>300</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Казы узбекские</strong> (50гр./30гр.)</span><br />
+                    Отварная колбаса из конины.</td>
+                  <td>
+                    <strong>300</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Восточное мясное ассорти</strong> (150гр./30гр.)</span><br />
+                    Казы узбекские, казы татарские, бастурма, копченая индейка.</td>
+                  <td>
+                    <strong>500</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Овощная грядка</strong> (180гр.)</span><br />
+                    Ассорти из свежих овощей: помидоров, огурцов, болгарского перца и зелени.</td>
+                  <td>
+                    <strong>200</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Ассорти из молодой зелени</strong> (75гр.)</span><br />
+                    Петрушка, кинза, укроп, зелёный лук, базилик.</td>
+                  <td>
+                    <strong>120</strong></td>
+                </tr>
+                <tr>
+                  <td class="menu-category" colspan="2">
+                    <h3 id="supy">
+                      <a id="Supy_vostochnoy_kukhni" name="Supy_vostochnoy_kukhni"></a>Супы восточной кухни</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Шурпа</strong> (340гр.)</span><br />
+                    Традиционный суп на мясном бульоне с овощами и бараньей корейкой.</td>
+                  <td>
+                    <strong>400</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Мампар</strong> (350гр.)</span><br />
+                    Традиционный суп на мясном бульоне с бараниной, овощами, клёцками из теста и тонко порезанным омлетом</td>
+                  <td>
+                    <strong>300</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Лагман</strong> (350гр.)</span><br />
+                    Мясной бульон с бараниной, домашней лапшой, овощами, заправленный соусом &laquo;Ваджу&raquo;</td>
+                  <td>
+                    <strong>400</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Кук шурва</strong> (350гр.)</span><br />
+                    Щи из молодого зелёного щавеля с картофелем и морковью.</td>
+                  <td>
+                    <strong>300</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Улугбек</strong> (350гр.)</span><br />
+                    Мясной бульон, щавель, язык, варёное яйцо, картофель, морковь.</td>
+                  <td>
+                    <strong>320</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Чучвара шурва</strong> (350гр.)</span><br />
+                    Домашние пельмени, приготовленные по специальному рецепту на мясном бульоне.</td>
+                  <td>
+                    <strong>300</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Киймали товук шурва</strong> (250гр.)</span><br />
+                    Тончайшая домашняя лапша на курином бульоне с фрикадельками.</td>
+                  <td>
+                    <strong>300</strong></td>
+                </tr>
+                <tr>
+                  <td class="menu-category" colspan="2">
+                    <h3 id="bluda-iz-myasa">
+                      <a id="Goryachie_blyuda_vostochnoy_kukhni" name="Goryachie_blyuda_vostochnoy_kukhni"></a>Горячие блюда восточной кухни</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Плов &laquo;Свадебный&raquo;</strong> (300гр.)</span><br />
+                    Плов с бараниной, изюмом и горохом &laquo;Нохат&raquo;.</td>
+                  <td>
+                    <strong>390</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Плов &laquo;Чайханский&raquo;</strong> (300гр.)</span><br />
+                    Традиционный плов с бараниной, барбарисом и зирой.</td>
+                  <td>
+                    <strong>390</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Казан кабоб</strong> (250гр./80гр./50гр.)</span><br />
+                    Каре ягнёнка, приготовленное в казане.</td>
+                  <td>
+                    <strong>850</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Ковурма лагман</strong> (300гр./40гр.)</span><br />
+                    Домашняя лапша с сочной бараниной, обжаренной со специями.</td>
+                  <td>
+                    <strong>350</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Чучвара</strong> (150гр.)</span><br />
+                    Жаренные домашние пельмени с бараниной.</td>
+                  <td>
+                    <strong>350</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Манты &laquo;Уйгурские&raquo;</strong> (210гр./30гр.)</span><br />
+                    Филе барашка в тончайшем тесте, приготовленное на пару.</td>
+                  <td>
+                    <strong>350</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Долма</strong> (180гр./85гр./30гр.)</span><br />
+                    Долма с бараниной и зеленью, приготовленная по старинному рецепту, со сметаной.</td>
+                  <td>
+                    <strong>350</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Джумбок джужа</strong> (1шт./70гр./50гр.)</span><br />
+                    Цыпленок-табака со свежими овощами.</td>
+                  <td>
+                    <strong>470</strong></td>
+                </tr>
+                <tr>
+                  <td class="menu-category" colspan="2">
+                    <h3 id="shahshlyki">
+                      <a id="Shashlyki" name="Shashlyki"></a>Шашлыки, приготовленные на углях</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Кизил балыкдан кабоб</strong> (120гр./50гр./25гр.)</span><br />
+                    Шашлык из семги с дольками лимона и кольцами репчатого лука</td>
+                  <td>
+                    <strong>350</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Махсус кабоб</strong> (70гр./40гр.)</span><br />
+                    Шашлык из телятины с кольцами репчатого лука.</td>
+                  <td>
+                    <strong>240</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Узбечка кабоб</strong> (70гр./40гр.)</span><br />
+                    Нежное филе барашка с кольцами репчатого лука.</td>
+                  <td>
+                    <strong>240</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Уч панджа</strong> (160гр./40гр.)</span><br />
+                    Телятина или баранина (по Вашему выбору) на трёх шампурах с кольцами репчатого лука.</td>
+                  <td>
+                    <strong>450</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Чарвили кийма кабоб</strong> (110гр./30гр.)</span><br />
+                    Люля-кебаб в &laquo;сетке&raquo; из баранины с кольцами репчатого лука.</td>
+                  <td>
+                    <strong>250</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Жигар кабоб</strong> (70гр./40гр.)</span><br />
+                    Баранья печень с кольцами репчатого лука.</td>
+                  <td>
+                    <strong>200</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Товук Лахим кабоб</strong> (100гр./40гр.)</span><br />
+                    Шашлычок из куриного филе с кольцами репчатого лука.</td>
+                  <td>
+                    <strong>220</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Товук канате кабоб</strong> (130гр./40гр.)</span><br />
+                    Шашлычок из куриных крылышек с кольцами репчатого лука.</td>
+                  <td>
+                    <strong>220</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Сабзавот кабоб</strong> (130гр.)</span><br />
+                    Помидор, баклажан, цукини, лук красный, перец болгарский с кольцами репчатого лука.</td>
+                  <td>
+                    <strong>200</strong></td>
+                </tr>
+                <tr>
+                  <td class="menu-category" colspan="2">
+                    <h3 id="sousy">
+                      <a id="Sousy_vostochnoy_kukhni" name="Sousy_vostochnoy_kukhni"></a>Соусы восточной кухни</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Томатный соус &laquo;Сабуни&raquo; с зеленью и специями</strong> (50гр.)</span></td>
+                  <td>
+                    <strong>50</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Соус &laquo;Ткемали красный&raquo;</strong> (50гр.)</span></td>
+                  <td>
+                    <strong>50</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Соус &laquo;Ткемали зеленый&raquo;</strong> (50гр.)</span></td>
+                  <td>
+                    <strong>50</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Соус &laquo;Наршараб&raquo;</strong> (Гранатовый соус) (50гр.)</span></td>
+                  <td>
+                    <strong>50</strong></td>
+                </tr>
+                <tr>
+                  <td class="menu-category" colspan="2">
+                    <h3 id="sousy">
+                      <a id="Vypechka_vostochnoy_kukhni" name="Vypechka_vostochnoy_kukhni"></a>Выпечка восточной кухни</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Самса</strong> (100гр.)</span><br />
+                    Слоеный пирожок с бараниной из тандыра</td>
+                  <td>
+                    <strong>120</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Чебурек с телятиной</strong> (160гр.)</span></td>
+                  <td>
+                    <strong>180</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Чебурек с сыром</strong> (100гр.)</span></td>
+                  <td>
+                    <strong>120</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Бичак с зеленью</strong> (110гр.)</span><br />
+                    Пирожок из постного теста.</td>
+                  <td>
+                    <strong>120</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Бичак с сыром и зеленью</strong> (115гр.)</span><br />
+                    Пирожок из постного теста.</td>
+                  <td>
+                    <strong>120</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Мехнон нон</strong> (130гр.)</span><br />
+                    Горячая лепешка из тандыра.</td>
+                  <td>
+                    <strong>70</strong></td>
+                </tr>
+                <tr>
+                  <td class="menu-category" colspan="2">
+                    <h3 id="vkusnyashki">
+                      <a id="Deserty_vostochnoy_kukhni" name="Deserty_vostochnoy_kukhni"></a>Десерты восточной кухни</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Асалхон</strong> (100гр.)</span><br />
+                    Медовый торт с фирменным кремом.</td>
+                  <td>
+                    <strong>260</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Пахлава</strong> (80гр.)</span><br />
+                    Восточная сладость с грецкими орехами.</td>
+                  <td>
+                    <strong>190</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Рулет с курагой</strong> (80гр./15гр.)</span><br />
+                    Нежное песочное тесто с начинкой из кураги.</td>
+                  <td>
+                    <strong>150</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Назакат</strong> (180гр.)</span><br />
+                    Нежный крем с ягодами.</td>
+                  <td>
+                    <strong>200</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Трубочки с творожным кремом</strong> (150гр.)</span></td>
+                  <td>
+                    <strong>150</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Манзурочка</strong> (100гр.)</span><br />
+                    Печенье с изюмом, курагой и орехами.</td>
+                  <td>
+                    <strong>150</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Ассорти из сухофруктов</strong> (100гр.)</span><br />
+                    Миндаль в сахаре, курага, грецкий орех, изюм.</td>
+                  <td>
+                    <strong>120</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Варенье по Вашему выбору</strong> (100гр.)</span><br />
+                    Инжир, грецкий орех, вишня, кизил, айва, черешня.</td>
+                  <td>
+                    <strong>150</strong></td>
+                </tr>
+              </tbody>
+            </table>
+            <table border="0" cellpadding="5" cellspacing="0" id="menu" width="100%">
+              <tbody>
+                <tr>
+                  <td class="menu-category" colspan="2">
+                    <h2>
+                      <a id="Evropeyskaya_kukhnya" name="Evropeyskaya_kukhnya"></a>Европейская кухня</h2>
+                    <br />
+                    <h3 id="salaty" style="display:inline;">
+                      <a id="Salaty" name="Salaty"></a>Салаты</h3>
+                    <div id="menu-price">
+                      <span class="price-note">*</span> Все цены указаны в&nbsp;рублях</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><span class="dish"><strong>Цезарь классический</strong> (160гр.)</span></span><br />
+                    Листья салата Романо, заправленные классическим соусом &laquo;Цезарь&raquo;, с чесночными гренками.</td>
+                  <td>
+                    <strong style="white-space: nowrap;">200 <span class="price-note">*</span></strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Цезарь с курицей</strong> (250гр.)</span></td>
+                  <td>
+                    <strong>250</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Цезарь с тигровыми креветками</strong> (250гр.)</span></td>
+                  <td>
+                    <strong>320</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Цезарь с телятиной</strong> (240гр.)</span></td>
+                  <td>
+                    <strong>320</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Цезарь с семгой</strong> (240гр.)</span></td>
+                  <td>
+                    <strong>320</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Тар-тар из семги</strong> (170гр.)</span><br />
+                    Тартар из слабосоленой семги в заправке из лимонного сока c Табаско и кубиков авокадо.</td>
+                  <td>
+                    <strong>280</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Салат с тунцом и рукколой</strong> (145гр.)</span><br />
+                    Листья рукколы, заправленные оливковым маслом, с обжаренными ломтиками тунца.</td>
+                  <td>
+                    <strong>320</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Теплый салат с куриной печенью</strong> (240гр.)</span><br />
+                    Теплый салат с куриной печенью, листьями зеленого салата в горчичном соусе с оливковым маслом.</td>
+                  <td>
+                    <strong>200</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Греческий салат</strong> (180гр.)</span><br />
+                    Овощной салат с сыром &laquo;Фета&raquo;.</td>
+                  <td>
+                    <strong>200</strong></td>
+                </tr>
+                <tr>
+                  <td class="menu-category" colspan="2">
+                    <h3 id="holodnye-zakuski">
+                      <a id="Kholodnye_zakuski_evropeyskoy_kukhni" name="Kholodnye_zakuski_evropeyskoy_kukhni"></a>Холодные закуски европейской кухни</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Рыбное ассорти</strong> (150гр.)</span><br />
+                    Слабосолёная семга, масленая рыба х/к, палтус х/к.</td>
+                  <td>
+                    <strong>550</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Слабосолёная семга</strong> (100гр./50гр.)</span><br />
+                    Тонко нарезанная семга с соусом &laquo;Тар-тар&raquo;.</td>
+                  <td>
+                    <strong>300</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Сельдь &laquo;по-домашнему&raquo;</strong> (150гр.)</span><br />
+                    Филе сельди с отварным картофелем.</td>
+                  <td>
+                    <strong>250</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Торро биф</strong> (130гр./30гр.)</span><br />
+                    Тонкие ломтики маринованной говяжьей вырезки (средняя степень прожарки) с листьями рукколы в Бальзамической заправке.</td>
+                  <td>
+                    <strong>280</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Язык с хреном</strong> (75гр./30гр.)</span><br />
+                    Отварной говяжий язык, подаётся с хреном.</td>
+                  <td>
+                    <strong>150</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Сырная тарелка</strong> (100гр.)</span><br />
+                    Гауда, Дор Блю,Чечил, Пармезан, грецкий орех, виноград.</td>
+                  <td>
+                    <strong>200</strong></td>
+                </tr>
+                <tr>
+                  <td class="menu-category" colspan="2">
+                    <h3 id="holodnye-zakuski">
+                      <a id="Goryachie_zakuski_evropeyskoy_kukhni" name="Goryachie_zakuski_evropeyskoy_kukhni"></a>Горячие закуски европейской кухни</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Жюльен с шампиньонами в тарталетке</strong> (90гр.)</span></td>
+                  <td>
+                    <strong>90</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Жюльен с белыми грибами в тарталетке</strong> (90гр.)</span></td>
+                  <td>
+                    <strong>120</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Жюльен с курицей в тарталетке</strong> (90гр.)</span></td>
+                  <td>
+                    <strong>90</strong></td>
+                </tr>
+                <tr>
+                  <td class="menu-category" colspan="2">
+                    <h3 id="supy">
+                      <a id="Supy_evropeyskoy_kukhni" name="Supy_evropeyskoy_kukhni"></a>Супы европейской кухни</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Солянка мясная</strong> (250гр.)</span><br />
+                    Солянка на говяжьем бульоне с оливками, каперсами и сметаной.</td>
+                  <td>
+                    <strong>200</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Суп-пюре из белых грибов</strong> (250гр.)</span><br />
+                    Подаётся с чесночными гренками.</td>
+                  <td>
+                    <strong>250</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Суп-пюре из шпината</strong> (250гр./15гр.)</span><br />
+                    Подаётся с чесночными гренками.</td>
+                  <td>
+                    <strong>180</strong></td>
+                </tr>
+                <tr>
+                  <td class="menu-category" colspan="2">
+                    <h3 id="bluda-iz-ryby">
+                      <a id="Blyuda_iz_ryby" name="Blyuda_iz_ryby"></a>Блюда из рыбы</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Дорада на углях</strong> (1шт.)</span><br />
+                    Дорада, запеченная с лимоном, подается с луком.</td>
+                  <td>
+                    <strong>500</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Сибас на углях или на пару</strong> (1шт.)</span><br />
+                    Сибас, запеченный с лимоном, подается с луком.</td>
+                  <td>
+                    <strong>500</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Стейк из семги (на пару или на гриле)</strong> (180гр.)</span></td>
+                  <td>
+                    <strong>450</strong></td>
+                </tr>
+                <tr>
+                  <td class="menu-category" colspan="2">
+                    <h3 id="bluda-iz-myasa">
+                      <a id="Blyuda_iz_myasa" name="Blyuda_iz_myasa"></a>Блюда из мяса</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Стейк из говяжьей вырезки</strong> (170гр./80гр.)</span><br />
+                    Классический стейк из говяжьей вырезки с соусом из лука-шалот и салатом из рукколы.</td>
+                  <td>
+                    <strong>650</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Карэ ягненка</strong> (350гр./50гр.)</span><br />
+                    Запеченная ягнятина на ребрышках с овощами-гриль и соусом Ткемали.</td>
+                  <td>
+                    <strong>800</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Бефстроганов</strong> (290гр.)</span><br />
+                    Бефстроганов из говяжьей вырезки в сметанном соусе с луком с картофельным пюре.</td>
+                  <td>
+                    <strong>600</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Картофель по-домашнему с ломтиками телятины и луком</strong> (400гр.)</span></td>
+                  <td>
+                    <strong>500</strong></td>
+                </tr>
+                <tr>
+                  <td class="menu-category" colspan="2">
+                    <h3 id="sousy">
+                      <a id="Garniry" name="Garniry"></a>Гарниры</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Картофельное пюре</strong> (120гр.)</span></td>
+                  <td>
+                    <strong>100</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Картофель, жаренный с грибами</strong> (120гр.)</span></td>
+                  <td>
+                    <strong>120</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Картофель по-деревенски</strong> (150гр.)</span></td>
+                  <td>
+                    <strong>100</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Картофель-фри</strong> (150гр.)</span></td>
+                  <td>
+                    <strong>100</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Рис с овощами</strong> (120гр.)</span></td>
+                  <td>
+                    <strong>80</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Овощи-гриль</strong> (120гр.)</span></td>
+                  <td>
+                    <strong>100</strong></td>
+                </tr>
+                <tr>
+                  <td class="menu-category" colspan="2">
+                    <h3 id="pasty">
+                      <a id="Pasty" name="Pasty"></a>Пасты</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Паста &laquo;Фарфале&raquo; с семгой</strong> (350гр.)</span><br />
+                    Фарфале с обжаренными кусочками семги и красной икрой в сливочном соусе.</td>
+                  <td>
+                    <strong>350</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Черные спагетти с морепродуктами</strong> (410гр.)</span></td>
+                  <td>
+                    <strong>470</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Спагетти Болонез</strong> (450гр.)</span><br />
+                    Спагетти в томатно-овощном соусе с говяжьей вырезкой.</td>
+                  <td>
+                    <strong>370</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Фетучини с белыми грибами в сливочном соусе</strong> (370гр.)</span></td>
+                  <td>
+                    <strong>330</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Пене с овощами в томатном соусе</strong> (310гр.)</span></td>
+                  <td>
+                    <strong>390</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Шпинатные тальятелле с соусом &quot;Песто&quot; и грецкими орехами</strong> (295гр.)</span></td>
+                  <td>
+                    <strong>310</strong></td>
+                </tr>
+                <tr>
+                  <td class="menu-category" colspan="2">
+                    <h3 id="sousy">
+                      <a id="Deserty_evropeyskoy_kukhni" name="Deserty_evropeyskoy_kukhni"></a>Десерты европейской кухни</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Мусс &laquo;Три шоколада&raquo;</strong> (145гр./6гр.)</span></td>
+                  <td>
+                    <strong>240</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Чизкейк &laquo;Нью-Йорк&raquo;</strong> (120гр./26гр.)</span></td>
+                  <td>
+                    <strong>200</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Бретонский яблочный пирог</strong> (100гр./32гр.)</span></td>
+                  <td>
+                    <strong>170</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Морковное пирожное</strong> (116гр./5гр.)</span></td>
+                  <td>
+                    <strong>160</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Брусничный кремовый пирог с шоколадом</strong> (117гр./25гр.)</span></td>
+                  <td>
+                    <strong>210</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Профитроли</strong> (65гр./6гр.)</span></td>
+                  <td>
+                    <strong>100</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Брауни &laquo;Черепашка&raquo;</strong> (78гр./7гр.)</span></td>
+                  <td>
+                    <strong>175</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Эклеры ванильные</strong> (80гр./6гр.)</span></td>
+                  <td>
+                    <strong>120</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Тирамису</strong> (110гр./6гр.)</span></td>
+                  <td>
+                    <strong>220</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Назакат</strong> (180гр.)</span><br />
+                    Нежный крем с ягодами.</td>
+                  <td>
+                    <strong>200</strong></td>
+                </tr>
+              </tbody>
+            </table>
+            <table border="0" cellpadding="5" cellspacing="0" id="menu" width="100%">
+              <tbody>
+                <tr>
+                  <td class="menu-category" colspan="2">
+                    <h2>
+                      <a id="Menyu_kofe_breykov" name="Menyu_kofe_breykov"></a>Меню кофе брейков</h2>
+                    <br />
+                    <h3 id="salaty" style="display:inline;">
+                      <a id="Napitki" name="Napitki"></a>Напитки</h3>
+                    <div id="menu-price">
+                      <span class="price-note">*</span> Все цены указаны в&nbsp;рублях</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><span class="dish"><strong>Чай пакетированный и кофе американский</strong> 1/1(200мл)</span></span></td>
+                  <td>
+                    <strong style="white-space: nowrap;">50 <span class="price-note">*</span></strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Сок пакетированный в ассортименте </strong> (200мл)</span></td>
+                  <td>
+                    <strong>25</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Хоррогейт б\з</strong> (330мл)</span></td>
+                  <td>
+                    <strong>75</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Хоррогейт газ</strong> (330мл)</span></td>
+                  <td>
+                    <strong>75</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Coca-Cola</strong> (250мл)</span></td>
+                  <td>
+                    <strong>100</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Фанта</strong> (250мл)</span></td>
+                  <td>
+                    <strong>100</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Спрайт</strong> (250мл)</span></td>
+                  <td>
+                    <strong>100</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Тоник</strong> (250мл)</span></td>
+                  <td>
+                    <strong>100</strong></td>
+                </tr>
+                <tr>
+                  <td class="menu-category" colspan="2">
+                    <h3 id="holodnye-zakuski">
+                      <a id="Zakuski" name="Zakuski"></a>Закуски</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Тарталетка с салатом с палочками сурими, яйцом и кукурузой</strong> (40гр.)</span></td>
+                  <td>
+                    <strong>40</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Тарталетка с овощным рататуем</strong> (40гр.)</span></td>
+                  <td>
+                    <strong>40</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Тарталетка с салатом с ветчиной</strong> (40гр.)</span></td>
+                  <td>
+                    <strong>40</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Тарталетка со &laquo;Столичным&raquo; салатом</strong> (40гр.)</span></td>
+                  <td>
+                    <strong>40</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Самса с бараниной</strong> (100гр.)</span></td>
+                  <td>
+                    <strong>120</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Пирожок с капустой (заказ не менее, чем за 2 дня)</strong> (40гр.)</span></td>
+                  <td>
+                    <strong>40</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Пирожок с яйцом и зеленым луком (заказ не менее, чем за 2 дня)</strong> (40гр.)</span></td>
+                  <td>
+                    <strong>40</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Пирожок с грибами (заказ не менее, чем за 2 дня)</strong> (40гр.)</span></td>
+                  <td>
+                    <strong>40</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Бутерброд с сыром</strong> (44гр.)</span></td>
+                  <td>
+                    <strong>50</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Бутерброд с семгой</strong> (44гр.)</span></td>
+                  <td>
+                    <strong>50</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Бутерброд с ростбифом</strong> (44гр.)</span></td>
+                  <td>
+                    <strong>50</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Бутеброд с говядиной особой</strong> (44гр.)</span></td>
+                  <td>
+                    <strong>50</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Сэндвич с салатом из тунца</strong> (88гр.)</span></td>
+                  <td>
+                    <strong>100</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Сэндвич с семгой</strong> (65гр.)</span></td>
+                  <td>
+                    <strong>100</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Сэндвич с сыром и ветчиной</strong> (75гр.)</span></td>
+                  <td>
+                    <strong>100</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Сэндвич с ростбифом</strong> (75гр.)</span></td>
+                  <td>
+                    <strong>120</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Брускета с сыром &laquo;Фета&raquo; (заказ не менее, чем за 2 дня)</strong> (113гр.)</span></td>
+                  <td>
+                    <strong>120</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Брускета с анчоусами (заказ не менее, чем за 2 дня)</strong> (115гр.)</span></td>
+                  <td>
+                    <strong>120</strong></td>
+                </tr>
+                <tr>
+                  <td class="menu-category" colspan="2">
+                    <h3 id="sousy">
+                      <a id="Vypechka_i_Deserty" name="Vypechka_i_Deserty"></a>Выпечка и Десерты</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Медовый торт с фирменным кремом</strong> (100гр.)</span></td>
+                  <td>
+                    <strong>260</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Рулет с курагой</strong> (80гр./15гр.)</span></td>
+                  <td>
+                    <strong>150</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Печенье с изюмом, курагой и орехами</strong> (100гр.)</span></td>
+                  <td>
+                    <strong>150</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Профитроли</strong> (65гр.)</span></td>
+                  <td>
+                    <strong>100</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Брауни &laquo;Черепашка&raquo;</strong> (80гр.)</span></td>
+                  <td>
+                    <strong>175</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Эклеры ванильные</strong> (85гр.)</span></td>
+                  <td>
+                    <strong>120</strong></td>
+                </tr>
+                <tr>
+                </tr>
+              </tbody>
+            </table>
+            <table border="0" cellpadding="5" cellspacing="0" id="menu" width="100%">
+              <tbody>
+                <tr>
+                  <td class="menu-category" colspan="2">
+                    <h2>
+                      <a name="krepkie-alkogolnie-napitki"></a>
+                    Крепкие алкогольные напитки</h2>
+                    <br />
+                    <h3 id="vodka" style="display:inline;">
+                      <a id="Vodka" name="Vodka"></a>Водка</h3>
+                    <div id="menu-price">
+                      <span class="price-note">*</span> Все цены указаны в&nbsp;рублях</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><span class="dish"><strong>Зеленая марка</strong> (50мл)</span></span></td>
+                  <td>
+                    <strong style="white-space: nowrap;">90 <span class="price-note">*</span></strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Русский Стандарт</strong> (50мл)</span></td>
+                  <td>
+                    <strong>120</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Русский Стандарт Платиновая</strong> (50мл)</span></td>
+                  <td>
+                    <strong>150</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Граппа Кандолини</strong> (50мл)</span></td>
+                  <td>
+                    <strong>150</strong></td>
+                </tr>
+                <tr>
+                  <td class="menu-category" colspan="2">
+                    <h3 id="viski">
+                      <a id="Viski" name="Viski"></a>Виски</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Джонни Уокер Ред Лэйбл </strong> (50мл)</span></td>
+                  <td>
+                    <strong>220</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Джонни Уокер Блэк Лэйбл </strong> (50мл)</span></td>
+                  <td>
+                    <strong>400</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Чивас Ригал 12 лет</strong> (50мл)</span></td>
+                  <td>
+                    <strong>350</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Джим Бим </strong> (50мл)</span></td>
+                  <td>
+                    <strong>220</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Кэптейнс Кэт</strong> (50мл)</span></td>
+                  <td>
+                    <strong>200</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Джемисон</strong> (50мл)</span></td>
+                  <td>
+                    <strong>240</strong></td>
+                </tr>
+                <tr>
+                  <td class="menu-category" colspan="2">
+                    <h3 id="koniak">
+                      <a id="Konyak" name="Konyak"></a>Коньяк</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Хеннесси VS</strong> (50мл)</span></td>
+                  <td>
+                    <strong>400</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Хеннесси VSОP</strong> (50мл)</span></td>
+                  <td>
+                    <strong>500</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Хеннесси ХО </strong> (50мл)</span></td>
+                  <td>
+                    <strong>1500</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Курвуазье ХО</strong> (50мл)</span></td>
+                  <td>
+                    <strong>1450</strong></td>
+                </tr>
+                <tr>
+                  <td class="menu-category" colspan="2">
+                    <h3 id="rom">
+                      <a id="Rom" name="Rom"></a>Ром</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Бакарди Бланка</strong> (50мл)</span></td>
+                  <td>
+                    <strong>200</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Бакарди Блэк </strong> (50мл)</span></td>
+                  <td>
+                    <strong>200</strong></td>
+                </tr>
+                <tr>
+                  <td class="menu-category" colspan="2">
+                    <h3 id="tekila">
+                      <a id="Tekila" name="Tekila"></a>Текила</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Сауза Голд</strong> (50мл)</span></td>
+                  <td>
+                    <strong>230</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Сауза Сильвэ </strong> (50мл)</span></td>
+                  <td>
+                    <strong>230</strong></td>
+                </tr>
+                <tr>
+                  <td class="menu-category" colspan="2">
+                    <h3 id="gin">
+                      <a id="Dzhin" name="Dzhin"></a>Джин</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Гордонс / Gordon&rsquo;s</strong> (50мл)</span></td>
+                  <td>
+                    <strong>240</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Болс Женевер </strong> (50мл)</span></td>
+                  <td>
+                    <strong>220</strong></td>
+                </tr>
+                <tr>
+                  <td class="menu-category" colspan="2">
+                    <h3 id="nast">
+                      <a id="Gorkie_nastoyki" name="Gorkie_nastoyki"></a>Горькие настойки</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Кампари</strong> (50мл)</span></td>
+                  <td>
+                    <strong>150</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Бехеровка </strong> (50мл)</span></td>
+                  <td>
+                    <strong>180</strong></td>
+                </tr>
+                <tr>
+                  <td class="menu-category" colspan="2">
+                    <h3 id="vermut">
+                      <a id="Vermut" name="Vermut"></a>Вермут</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Мартини Бьянко </strong> (100мл)</span></td>
+                  <td>
+                    <strong>200</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Мартини Россо</strong> (100мл)</span></td>
+                  <td>
+                    <strong>200</strong></td>
+                </tr>
+                <tr>
+                  <td class="menu-category" colspan="2">
+                    <h3 id="liker">
+                      <a id="Likery" name="Likery"></a>Ликеры</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Бэйлис</strong> (50мл)</span></td>
+                  <td>
+                    <strong>180</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Блю Кюрасао</strong> (50мл)</span></td>
+                  <td>
+                    <strong>180</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Драмбюи</strong> (50мл)</span></td>
+                  <td>
+                    <strong>250</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Калуа</strong> (50мл)</span></td>
+                  <td>
+                    <strong>300</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Ксанти</strong> (50мл)</span></td>
+                  <td>
+                    <strong>250</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Куантро</strong> (50мл)</span></td>
+                  <td>
+                    <strong>250</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Малибу</strong> (50мл)</span></td>
+                  <td>
+                    <strong>150</strong></td>
+                </tr>
+                <tr>
+                  <td class="menu-category" colspan="2">
+                    <h2><a name="vino"></a>
+                      Вино</h2>
+                    <br />
+                    <h3 id="i-vino" style="display:inline;">
+                      <a id="Igristoe_vino" name="Igristoe_vino"></a>Игристое вино</h3>
+                    <div id="menu-price">
+                      <span class="price-note">*</span> Все цены указаны в&nbsp;рублях</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><span class="dish"><strong>Ламбруско Эмилия IGT Ла Винья, белое полусладкое</strong> (750мл)</span></span></td>
+                  <td>
+                    <strong style="white-space: nowrap;">650 <span class="price-note">*</span></strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Маркиз де Люкур </strong> (750мл)</span></td>
+                  <td>
+                    <strong>1200</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Просекко брют Валь дОка</strong> (750мл)</span></td>
+                  <td>
+                    <strong>1800</strong></td>
+                </tr>
+                <tr>
+                  <td class="menu-category" colspan="2">
+                    <h3 id="w-vino">
+                      <a id="Beloe_vino" name="Beloe_vino"></a>Белое вино</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Пино Гриджио Вилла Кьяра (Италия, сухое)</strong>(150мл)<br />
+                      (750мл)</span></td>
+                  <td>
+                    <strong>200<br />
+                      1000</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Бордо АОС Флер де Казо (Франция, сухое)</strong> (750мл)</span></td>
+                  <td>
+                    <strong>1000</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Кресман Соло Совиньон, Бордо (Франция, сухое)</strong> (750мл)</span></td>
+                  <td>
+                    <strong>950</strong></td>
+                </tr>
+                <tr>
+                  <td class="menu-category" colspan="2">
+                    <h3 id="r-vino">
+                      <a id="Krasnoe_vino" name="Krasnoe_vino"></a>Красное вино</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Кьянти DOCG, Тоскана (Италия, сухое)</strong>(150мл)<br />
+                      (750мл)</span></td>
+                  <td>
+                    <strong>200<br />
+                      1000</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Мерло, Каса Лапостоль (Чили)</strong> (750мл)</span></td>
+                  <td>
+                    <strong>2100</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Шато Бонне Андре</strong> (750мл)</span></td>
+                  <td>
+                    <strong>1950</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Шато Кушеруа</strong> (750мл)</span></td>
+                  <td>
+                    <strong>3200</strong></td>
+                </tr>
+                <tr>
+                  <td class="menu-category" colspan="2">
+                    <h2><a name="kokteili"></a>
+                      Коктейли</h2>
+                    <br />
+                    <h3 id="alkkokt" style="display:inline;">
+                      <a id="Alkogolnye_kokteyli" name="Alkogolnye_kokteyli"></a>Алкогольные коктейли</h3>
+                    <div id="menu-price">
+                      <span class="price-note">*</span> Все цены указаны в&nbsp;рублях</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><span class="dish"><strong>Б-52</strong> (60мл)<br />
+                        Калуа, Бэйлис, Куантро </span></span></td>
+                  <td>
+                    <strong style="white-space: nowrap;">240 <span class="price-note">*</span></strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Белый русский </strong> (250мл)</span><br />
+                    Калуа, водка, сливки</td>
+                  <td>
+                    <strong>150</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Виски-Кола</strong> (250мл)</span></td>
+                  <td>
+                    <strong>270</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Водка-Тоник</strong> (250мл)</span></td>
+                  <td>
+                    <strong>90</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Голубые Гавайи</strong> (250мл)</span><br />
+                    Ром, Блю Кюрасао, сок</td>
+                  <td>
+                    <strong>240</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Джин-тоник</strong> (250мл)</span></td>
+                  <td>
+                    <strong>240</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Кампари Оранж</strong> (250мл)</span><br />
+                    Кампари, апельсиновый сок</td>
+                  <td>
+                    <strong>170</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Кровавая Мэри</strong> (250мл)</span><br />
+                    Водка, вочестерширский соус, томатный сок, табаско, лимон</td>
+                  <td>
+                    <strong>90</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Лонг Айленд</strong> (400мл)</span><br />
+                    Ром, джин, Куантро, текила, водка, кока-кола</td>
+                  <td>
+                    <strong>400</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Маргарита</strong> (200мл)</span><br />
+                    Текила, Куантро, лайм</td>
+                  <td>
+                    <strong>400</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Мохито</strong> (400мл)</span><br />
+                    Водка, апельсиновый сок</td>
+                  <td>
+                    <strong>90</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Отвертка</strong> (250мл)</span><br />
+                    Водка, вочестерширский соус, томатный сок, табаско, лимон</td>
+                  <td>
+                    <strong>90</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Пина Колада</strong> (350мл)</span><br />
+                    Ром, Малибу, сливки, сок</td>
+                  <td>
+                    <strong>320</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Секс на пляже</strong> (250мл)</span><br />
+                    Персиковый ликер, водка, сок</td>
+                  <td>
+                    <strong>150</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Текила Санрайз</strong> (250мл)</span><br />
+                    Текила, сок, сироп</td>
+                  <td>
+                    <strong>260</strong></td>
+                </tr>
+                <tr>
+                  <td class="menu-category" colspan="2">
+                    <h3 id="kokt">
+                      <a id="Bezalkogolnye_kokteyli" name="Bezalkogolnye_kokteyli"></a>Безалкогольные коктейли</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Тропикана</strong>(375мл)</span><br />
+                    Апельсиновый сок, клубничный сироп, клубника, банан, лед</td>
+                  <td>
+                    <strong>210</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Безалкогольное мохито</strong> (400мл)</span><br />
+                    Содовая, лимонный сок, сахарный сироп, мята</td>
+                  <td>
+                    <strong>210</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Молочный коктейль</strong> (350мл)</span><br />
+                    В ассортименте: клубничный, банановый, шоколадный, ванильный</td>
+                  <td>
+                    <strong>200</strong></td>
+                </tr>
+                <tr>
+                  <td class="menu-category" colspan="2">
+                    <h2><a name="pivo-category"></a>
+                      Пиво</h2>
+                    <br />
+                    <h3 id="raz-pivo" style="display:inline;">
+                      <a id="Razlivnoe_pivo" name="Razlivnoe_pivo"></a>Разливное пиво</h3>
+                    <div id="menu-price">
+                      &nbsp;</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><span class="dish"><strong>Spaten, Германия</strong> (500мл)</span></span></td>
+                  <td>
+                    <strong>250</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Spaten, Германия</strong> (330мл)</span></td>
+                  <td>
+                    <strong>170</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>5 Оборотов, Россия-Австрия</strong> (500мл)</span></td>
+                  <td>
+                    <strong>160</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>5 Оборотов, Россия-Австрия</strong> (300мл)</span></td>
+                  <td>
+                    <strong>110</strong></td>
+                </tr>
+                <tr>
+                  <td class="menu-category" colspan="2">
+                    <h3 id="pivo">
+                      <a id="Pivo_butylochnoe" name="Pivo_butylochnoe"></a>Пиво бутылочное</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>&ldquo;Старопрамен&rdquo; светлое пастеризованное (Россия-Чехия)</strong>(500мл)</span></td>
+                  <td>
+                    <strong>150</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>&ldquo;Хугарден белое&rdquo; нефильтрованное (Россия-Бельгия)</strong> (500мл)</span></td>
+                  <td>
+                    <strong>190</strong></td>
+                </tr>
+                <tr>
+                  <td class="menu-category" colspan="2">
+                    <h2><a name="bezalkogolnie-napitki"></a>
+                      Безалкогольные напитки</h2>
+                    <br />
+                    <h3 id="min-water" style="display:inline;">
+                      <a id="Mineralnaya_voda" name="Mineralnaya_voda"></a>Минеральная вода</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><span class="dish"><strong>Хоррогейт б\г</strong> (330мл)</span></span></td>
+                  <td>
+                    <strong>75&nbsp;</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Хоррогейт газ</strong> (330мл)</span></td>
+                  <td>
+                    <strong>75</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Сан Бенедетто б/г</strong> (250мл)</span></td>
+                  <td>
+                    <strong>90</strong></td>
+                </tr>
+                <tr>
+                  <td class="menu-category" colspan="2">
+                    <h3 id="juice">
+                      <a id="Svezhevyzhatye_soki" name="Svezhevyzhatye_soki"></a>Свежевыжатые соки</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Апельсиновый</strong>(200мл)</span></td>
+                  <td>
+                    <strong>230</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Грейпфрутовый</strong> (200мл)</span></td>
+                  <td>
+                    <strong>250</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Яблочный</strong>(200мл)</span></td>
+                  <td>
+                    <strong>230</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Морковный</strong> (200мл)</span></td>
+                  <td>
+                    <strong>200</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Лимонный</strong>(200мл)</span></td>
+                  <td>
+                    <strong>210</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Сельдереевый</strong> (200мл)</span></td>
+                  <td>
+                    <strong>300</strong></td>
+                </tr>
+                <tr>
+                  <td class="menu-category" colspan="2">
+                    <h3 id="juice1">
+                      <a id="soki" name="soki"></a>Соки</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Сок пакетированный в ассортименте</strong>(200мл)</span></td>
+                  <td>
+                    <strong>70</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Морс ягодный домашний</strong> (200мл)</span></td>
+                  <td>
+                    <strong>60</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Компот домашний</strong>(200мл)</span></td>
+                  <td>
+                    <strong>60</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Айран</strong> (200мл)</span></td>
+                  <td>
+                    <strong>80</strong></td>
+                </tr>
+                <tr>
+                  <td class="menu-category" colspan="2">
+                    <h3 id="gaz">
+                      <a id="Gazirovannye_napitki" name="Gazirovannye_napitki"></a>Газированные напитки</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Кока-Кола</strong>(250мл)</span></td>
+                  <td>
+                    <strong>100</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Кока-Кола Лайт</strong> (250мл)</span></td>
+                  <td>
+                    <strong>100</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Фанта</strong>(250мл)</span></td>
+                  <td>
+                    <strong>100</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Спрайт</strong> (250мл)</span></td>
+                  <td>
+                    <strong>100</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Тоник</strong> (250мл)</span></td>
+                  <td>
+                    <strong>100</strong></td>
+                </tr>
+                <tr>
+                  <td class="menu-category" colspan="2">
+                    <h3 id="cofe">
+                      <a id="Cofe" name="Cofe"></a>Кофе</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Американский кофе</strong>(150мл)</span></td>
+                  <td>
+                    <strong>120</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Эспрессо</strong> (60мл)</span></td>
+                  <td>
+                    <strong>80</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Двойной эспрессо</strong>(120мл)</span></td>
+                  <td>
+                    <strong>140</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Капуччино</strong> (175мл)</span></td>
+                  <td>
+                    <strong>150</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Латте</strong> (220мл)</span></td>
+                  <td>
+                    <strong>170</strong></td>
+                </tr>
+                <tr>
+                  <td class="menu-category" colspan="2">
+                    <h3 id="tea">
+                      <a id="Tea" name="Tea"></a>Чай</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Чай &laquo;Директорский&raquo;</strong>(750мл)</span><br />
+                    Черный чай с лимоном и сахаром</td>
+                  <td>
+                    <strong>200</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Чай &laquo;Байский&raquo;</strong> (750мл)</span><br />
+                    Черный чай с медом и лимоном</td>
+                  <td>
+                    <strong>250</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Чай &laquo;Ханский&raquo;</strong>(750мл)</span><br />
+                    Три вида чая с медом и лимоном</td>
+                  <td>
+                    <strong>300</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Чай зеленый</strong> (750мл)</span></td>
+                  <td>
+                    <strong>200</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Чай &laquo;Эл Грей&raquo;</strong> (750мл)</span><br />
+                    Черный чай, ароматизированный бергамотом</td>
+                  <td>
+                    <strong>200</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Чай &laquo;Молочный улун&raquo;</strong> (750мл)</span></td>
+                  <td>
+                    <strong>200</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Чай фруктовый &laquo;Красные ягоды&raquo;</strong> (750мл)</span></td>
+                  <td>
+                    <strong>200</strong></td>
+                </tr>
+                <tr>
+                  <td class="menu-category" colspan="2">
+                    <h3 id="sigatery">
+                      <a id="Sigarety" name="Sigarety"></a>Сигареты</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish"><strong>Сигаретный набор</strong></span><br />
+                    Пожалуйста, уточняйте у официанта ассортимент</td>
+                  <td>
+                    <strong>150</strong></td>
+                </tr>
+              </tbody>
+            </table>
+            <table border="0" cellpadding="5" cellspacing="0" id="menu" width="100%">
+              <tbody>
+                <tr>
+                  <td class="menu-category" colspan="2">
+                    <h2 class="lwe-editable"><a name="barnoe-menu"></a>
+                      Барное меню</h2>
+                    <br />
+                    <h3 class="lwe-editable" id="salaty" style="display:inline;">
+                      <a id="Zakuski_k_ pivu" name="Zakuski_k_ pivu"></a>Закуски к пиву</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish lwe-editable"><span class="dish lwe-editable"><strong class="lwe-editable">Ржаные гренки с чесночным соусом </strong> (275гр./50гр.)</span></span></td>
+                  <td>
+                    <strong class="lwe-editable">150</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish lwe-editable"><strong class="lwe-editable">Крылышки BBQ, малая порция&nbsp;</strong>(10шт/50гр.)</span><br />
+                    Крылышки BBQ с палочками свежего сельдерея и моркови и соусом &quot;Блю Чиз&quot;</td>
+                  <td>
+                    <strong class="lwe-editable" style="font-size: 10.9pt;">400</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish lwe-editable"><strong class="lwe-editable">Крылышки BBQ, большая порция&nbsp;</strong>(20шт/50гр.)</span><br />
+                    Крылышки BBQ с палочками свежего сельдерея и моркови и соусом &quot;Блю Чиз&quot;</td>
+                  <td>
+                    <strong class="lwe-editable">600</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish lwe-editable"><strong class="lwe-editable">Сэндвич с ветчиной и сыром&nbsp;</strong>(110гр./120гр./50гр.)</span><br />
+                    Сэндвич с ветчиной и сыром на тостовом хлебе с картофелем-фри и кетчупом</td>
+                  <td>
+                    <strong class="lwe-editable">150</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish lwe-editable"><strong class="lwe-editable">Острые сырные шарики с халапеньо</strong> (150гр.)</span></td>
+                  <td>
+                    <strong class="lwe-editable">280</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish lwe-editable"><strong class="lwe-editable">Луковые кольца-фри с соусом Барбекю</strong> (150гр./30гр.)</span></td>
+                  <td>
+                    <strong class="lwe-editable">150</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish lwe-editable"><strong class="lwe-editable">Кольца кальмара-фри с соусом Барбекю</strong> (150гр./30гр.)</span></td>
+                  <td>
+                    <strong class="lwe-editable">250</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish lwe-editable"><strong class="lwe-editable">Картофель фри (подается с кетчупом)</strong> (150гр./30гр.)</span></td>
+                  <td>
+                    <strong class="lwe-editable">110</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish lwe-editable"><strong class="lwe-editable">Картофель по-деревенски (подается с кетчупом)</strong> (150гр./30гр.)</span></td>
+                  <td>
+                    <strong class="lwe-editable">110</strong></td>
+                </tr>
+                <tr>
+                  <td class="menu-category" colspan="2">
+                    <h3 class="lwe-editable" id="holodnye-zakuski">
+                      <a id="Sousy_bar" name="Sousy_bar"></a>Соусы</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish lwe-editable"><strong class="lwe-editable">Томатный соус &laquo;Сабуни&raquo; с зеленью и специями</strong> (50гр.)</span></td>
+                  <td>
+                    <strong class="lwe-editable">50</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish lwe-editable"><strong class="lwe-editable">Ткемали красный</strong> (50гр.)</span></td>
+                  <td>
+                    <strong class="lwe-editable">50</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish lwe-editable"><strong class="lwe-editable">Ткемали зеленый</strong> (50гр.)</span></td>
+                  <td>
+                    <strong class="lwe-editable">50</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish lwe-editable"><strong class="lwe-editable">Наршараб (Гранатовый соус)</strong> (50гр.)</span></td>
+                  <td>
+                    <strong class="lwe-editable">50</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish lwe-editable"><strong class="lwe-editable">Барбекю</strong> (50гр.)</span></td>
+                  <td>
+                    <strong class="lwe-editable">50</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish lwe-editable"><strong class="lwe-editable">Чесночный (майонез со сметаной и чесноком)</strong> (50гр.)</span></td>
+                  <td>
+                    <strong class="lwe-editable">50</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="dish lwe-editable"><strong class="lwe-editable">Соус &quot;Блю-чиз&quot;</strong> (50гр.)</span></td>
+                  <td>
+                    <strong class="lwe-editable">50</strong></td>
+                </tr>
+              </tbody>
+            </table>
+
+
+
+
+
+
+
+          </div>
+          <div style="clear:both;"></div>
+        </div>
+
+        <div class="col-min content">
+          <div class="col1">
+            <h2><span>Наши </span>предложения</h2>
+            <h2>
+              Предложения кафе<br />
+              PLOVE & PASTA
+            </h2>
+            <ul class="menu-deals">
+              <li class=""><a
+                  href="businesslunch.html">Бизнес-ланч</a></li>
+              <li class=""><a
+                  href="wedding.html">Свадьбы, Юбилеи, Банкеты</a></li>
+              <li class=""><a
+                  href="childevents.html">Детские праздники</a></li>
+              <li class=""><a
+                  href="sportsbroadcast.html">Спортивные трансляции</a></li>
+              <li class=""><a
+                  href="conference.html">Зал для конференций</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="social">
+            <h2><span class="social-min">Присоединяйтесь:</span> <span class="social-wide">Наши новости в социальных сетях:</span>
+              <a href="http://vk.com/plovepasta" target="_blank">
+                <span class="vk"></span></a>
+              <a href="http://www.facebook.com/pages/PlovePasta/287689691351714" target="_blank">
+                <span class="fb"></span></a>
+              <a href="https://twitter.com/PovePasta" target="_blank">
+                <span class="tw"></span></a>
+            </h2>
+          </div>
+        </div>
+
+      </div><!-- #content-->
+
+      <footer id="footer">
+        <div class="footer_contacts">
+          <div class="tel"><span>Телефон:</span> <span class="cod_tel">(495)</span> 640-22-72</div>
+          <span>Адрес:</span> г. Москва, Алтуфьевское ш., 48, к. 1
+          <br /><br />
+          <div id="live_internet">
+            <!--LiveInternet counter--><script type="text/javascript"><!--
+              document.write("<a href='http://www.liveinternet.ru/click' "+
+                "target=_blank><img src='//counter.yadro.ru/hit?t18.5;r"+
+                escape(document.referrer)+((typeof(screen)=="undefined")?"":
+                ";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+                screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+                ";h"+escape(document.title.substring(0,80))+";"+Math.random()+
+                "' alt='' title='LiveInternet: показано число просмотров за 24"+
+                " часа, посетителей за 24 часа и за сегодня' "+
+                "border='0' width='88' height='31'><\/a>")
+              //--></script><!--/LiveInternet-->
+          </div>
+        </div>
+        <div class="copyright">
+          © 2012 «Plove & Pasta»<br />
+          Банкеты Алтуфьево недорого, бизнес-ланч&nbsp;Алтуфьево&nbsp;недорого.
+        </div>
+      </footer><!-- #footer -->
+
+    </div><!-- #wrapper -->
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+          try {
+            w.yaCounter17635372 = new Ya.Metrika({id:17635372, enableAll: true, webvisor:true});
+          } catch(e) { }
+        });
+    
+        var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+          d.addEventListener("DOMContentLoaded", f);
+        } else { f(); }
+      })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="//mc.yandex.ru/watch/17635372" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+  </body>
+</html>

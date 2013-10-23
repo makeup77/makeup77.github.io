@@ -1,0 +1,114 @@
+/* image replacement */
+.graphic, #prevBtn, #nextBtn, #easySlider1prev, #easySlider1next{
+  margin:0;
+  padding:0;
+  display:block;
+  overflow:hidden;
+  text-indent:-8000px;
+}
+/* // image replacement */
+
+/* Easy Slider */
+
+#easySlider ul, #easySlider li,
+#easySlider2 ul, #easySlider2 li{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+#easySlider2{margin-top:1em;}
+#easySlider li, #easySlider2 li{
+  /*
+      define width and height of list item (slide)
+      entire slider area will adjust according to the parameters provided here
+  */
+  width:213px;
+  height:134px;
+  overflow:hidden;
+}
+
+#prevBtn, #nextBtn,
+#easySlider1next, #easySlider1prev{
+  display:block;
+  width:20px;
+  height:20px;
+  position:absolute;
+  right:55px;
+  top:10px;
+  z-index:1000;
+}
+
+#nextBtn, #easySlider1next{
+  right:30px;
+}
+
+#prevBtn a, #nextBtn a,
+#easySlider1next a, #easySlider1prev a{
+  display:block;
+  position:relative;
+  height:20px;
+  background: url('../images/prev.png') 0 0 no-repeat;
+  width: 20px;
+}
+
+#nextBtn a, #easySlider1next a {
+  background: url('../images/nextbtn.png') 0 0 no-repeat;
+}
+
+#prevBtn a:hover {
+  background: url('../images/prev.png') 0 bottom no-repeat;
+}
+
+#nextBtn a:hover {
+  background: url('../images/nextbtn.png') 0 bottom no-repeat;
+}
+
+/* numeric controls */
+
+ol#controls{
+  margin:1em 0;
+  padding:0;
+  height:28px;
+}
+ol#controls li{
+  margin:0 10px 0 0;
+  padding:0;
+  float:left;
+  list-style:none;
+  height:28px;
+  line-height:28px;
+}
+ol#controls li a{
+  float:left;
+  height:28px;
+  line-height:28px;
+  border:1px solid #ccc;
+  background:#DAF3F8;
+  color:#555;
+  padding:0 10px;
+  text-decoration:none;
+}
+ol#controls li.current a{
+  background:#5DC9E1;
+  color:#fff;
+}
+ol#controls li a:focus, #prevBtn a:focus, #nextBtn a:focus{outline:none;}
+
+@media only screen and (max-width: 767px) {
+  #prevBtn, #nextBtn,
+  #easySlider1next, #easySlider1prev{
+    left:205px;
+  }
+
+  #nextBtn, #easySlider1next{
+    left:230px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .rt-block.npro1 {
+    margin-left: 10px;
+  }
+}
+
+/* // Easy Slider */

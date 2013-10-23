@@ -1,0 +1,101 @@
+.rt-container {
+  padding: 0;
+}
+
+.logo-block {
+  left: auto;
+}
+
+#rt-top .mod-languages {
+  margin-left: 20px;
+}
+
+.head-contacts.rt-block {
+  margin-left: 0;
+  left: 20px;
+}
+
+.evrika-booking .form-booking {
+  right: auto;
+  width: auto;
+}
+
+.gf-menu {
+  right: auto;
+  margin-left: 25px;
+}
+
+.gf-menu >li {
+  padding: 0 11px 0 12px;
+}
+
+.l1.gf-menu > li,
+.l1.gf-menu > li:first-child {
+  background: url("../images/navigation/nav-norm.png") -1px -1px;
+  border-right: 1px solid #bab1a1;
+  height: 40px;
+}
+
+.l1.gf-menu > li.active,
+.l1.gf-menu > li.active:first-child {
+  background: url('../images/navigation/nav-act.png') no-repeat;
+  background-position: -2px -1px;
+  height: 40px;
+}
+
+.l1.gf-menu > li.active:first-child {
+  border-left: 1px solid #aea490;
+}
+
+#slidorion {
+  width: 920px;
+  margin-left: -460px;
+}
+
+.blog-featured {
+  width: 640px;
+}
+
+#rt-main #rt-sidebar-a  .npro1.rt-block {
+  margin-left: 35px;
+}
+
+.room-price img {
+  margin-left: -15px;
+}
+
+.room-price table {
+  width: 60%;
+}
+
+/*photogallery*/
+
+.photogallery {
+  width: 650px;
+}
+
+.photogallery .nav-tabs {
+  padding-left: 20px;
+  padding-right: 10px;
+  width: 230px;
+  right: -262px;
+}
+
+.component-content,
+#rt-mainbottom .module-surround,
+.blog-featured,
+.room-price {
+  margin-left: 0;
+}
+
+.ivisa-banner {
+  margin-top: 10px;
+}
+
+#rt-top-surround .rt-grid-5 {
+  width: 345px;
+}
+
+.adress {
+  line-height: 1.3;
+}

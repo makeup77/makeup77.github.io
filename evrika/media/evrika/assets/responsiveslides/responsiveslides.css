@@ -1,0 +1,108 @@
+/*! http://responsiveslides.com v1.53 by @viljamis */
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+}
+
+.callbacks_container {
+  max-width: 630px;
+  position: relative;
+  z-index: 1;
+}
+
+.callbacks_nav {
+  position: absolute;
+  width: 23px;
+  height: 43px;
+  display: block;
+  z-index: 500;
+  top: 50%;
+  margin-top: -12px;
+  text-indent: -9999px;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.callbacks_nav.prev {
+  background: url('images/prev.jpg') no-repeat;
+  left: -8px;
+}
+
+.callbacks_nav.next {
+  background: url('images/next.jpg') no-repeat;
+  right: -8px;
+}
+
+.callbacks_tabs {
+  position: relative;
+  left: 50%;
+  margin-left: -34px;
+  margin-top: 7px;
+}
+
+.callbacks_tabs li {
+  overflow: hidden;
+  list-style-type: none;
+  float: left;
+  margin-right: 10px;
+}
+
+.callbacks_tabs li a {
+  text-indent: -9999px;
+  background: url('images/page.jpg') no-repeat;
+  width: 12px;
+  height: 12px;
+  display: block;
+}
+
+.callbacks_tabs li.callbacks_here a {
+  background: url('images/current-page.jpg') no-repeat;
+}
+
+@media only screen and (max-width: 959px) {
+  .callbacks_nav.prev {
+    left: -11px;
+  }
+
+  .callbacks_nav.next {
+    right: -11px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .callbacks_nav.prev {
+    left: -13px;
+  }
+
+  .callbacks_nav.next {
+    right: -13px;
+  }
+}

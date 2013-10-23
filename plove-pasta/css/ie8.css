@@ -1,0 +1,41 @@
+#header ul {
+  background-color: #000;
+  filter:progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+}
+
+
+#middle {
+  background-color: #fff;
+  filter:progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+}
+
+#footer {
+  background-color: #fff;
+  filter:progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+}
+
+.deal_img {
+  margin-bottom: 15px;
+}
+
+.deal_img p {
+  margin-top: 15px;
+}
+
+@media only screen and (max-width:800px) {
+  .content.col-min .col1 li,
+  .content.col-min .col1 li+li+li,
+  .content.col-min .col1 li+li+li+li+li {
+    float: left;
+    width: 43%;
+    margin-right: 10px;
+  }
+
+  .content.col-min .col1 li+li,
+  .content.col-min .col1 li+li+li+li,
+  .content.col-min .col1 li+li+li+li+li+li {
+    float: left;
+    width: 54%;
+    margin-right: 0;
+  }
+}

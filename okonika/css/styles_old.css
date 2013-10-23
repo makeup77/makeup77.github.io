@@ -1,0 +1,142 @@
+
+body, h1, h2, h3, h4, h5, h6, p {
+  font-family: "Arial", "Helvetica Neue", "Helvetica", Helvetica, sans-serif;
+  color: #2C2C2D;
+}
+
+h2 {
+  font-size: 38px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 21px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.row {
+  padding: 0 35px;
+}
+
+.header,
+.footer.row {
+  border-top: 6px solid #1a449e;
+  margin-top: 2px;
+}
+
+.header .columns {
+  margin-top: 45px;
+}
+
+.footer.row .row {
+  margin-top: 30px;
+} 
+
+.logo {
+  background: url('../images/78.png') no-repeat;
+  width: 305px;
+  height: 85px;
+}
+
+.header .logo.columns {
+  margin-top: 35px;
+}
+
+.header .contacts.columns {
+  margin-top: 25px;
+}
+
+.column:first-of-type {
+  padding-left: 0;
+}
+
+.same-5 .column {
+  width: 20%;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.partners .column {
+  padding-left: 0;
+}
+
+.header h3.subheader {
+  font-size: 31px;
+  line-height: 0.5;
+  color: #1A449E;
+  padding-left: 45px;
+}
+
+.header h3.subheader small {
+  font-size: 10px;
+  color: #2C2C2D;
+}
+
+.header h3.subheader small span {
+  white-space: nowrap;
+}
+
+.header .two img {
+  float: left;
+  margin-top: 5px;
+}
+
+.header .two .column {
+  padding: 0;
+}
+
+/* minislider */
+
+.slides_container {
+  width:84px;
+  height:56px;
+}
+.slides_container div {
+  width:84px;
+  height:56px;
+  display:block;
+}
+
+.minislider .pagination,
+.minislider .next,
+.minislider .prev {
+  display: none;
+}
+
+.minislider-left, .minislider-right {
+  width: 22px;
+  height: 22px;
+  overflow: hidden;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.minislider-left {
+  background-image: url("../img/left_arr.png");
+}
+
+.minislider-right {
+  background-image: url("../img/right_arr.png");
+}
+
+.minislider-left:hover {
+  background-image: url("../img/left_arr.png");
+  background-position-y: 22px;
+}
+
+.minislider-right:hover {
+  background-image: url("../img/right_arr.png");
+  background-position-y: 22px;
+}
