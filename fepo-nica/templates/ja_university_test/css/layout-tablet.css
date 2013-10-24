@@ -621,6 +621,7 @@ div.controltest .ja-typo-legend.answer-choices p {
 
   div.controltest .ja-typo-legend,
   .scroll-block {
-    min-height: 1px;
+  	height: auto !important;
+    min-height: 1px !important;
   }
 }
