@@ -1,67 +1,362 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru-ru" lang="ru-ru">
+<!DOCTYPE html>
+<HTML lang="ru-ru" xml:lang="ru-ru">
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title> Федеральный Интернет-экзамен в сфере профессионального образования</title>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=yes"/>
-    <meta name="HandheldFriendly" content="true" />
-
-    <?php include '_includes/assets.php' ?>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Федеральный Интернет-экзамен в сфере профессионального образования</title>
+    <link rel="stylesheet" href="media/system/css/modal.css" type="text/css">
+    <link rel="stylesheet" href="media/jui/css/icomoon.css" type="text/css">
+    <link rel="stylesheet" href="modules/mod_jasidenews/assets/style.css" type="text/css">
+    <link rel="stylesheet" href="modules/mod_jaslideshowlite/assets/animate.css" type="text/css">
+    <link rel="stylesheet" href="modules/mod_jaslideshowlite/assets/mod_jaslideshowlite-slide.css" type="text/css">
+    <link rel="stylesheet" href="plugins/system/jat3/jat3/base-themes/default/css/addons.css" type="text/css">
+    <link rel="stylesheet" href="plugins/system/jat3/jat3/base-themes/default/css/template-j30.css" type="text/css">
+    <link rel="stylesheet" href="plugins/system/jat3/jat3/base-themes/default/css/template.css" type="text/css">
+    <link rel="stylesheet" href="plugins/system/jat3/jat3/base-themes/default/css/layout.css" type="text/css">
+    <link rel="stylesheet" href="plugins/system/jat3/jat3/base-themes/default/css/usertools.css" type="text/css">
+    <link rel="stylesheet" href="plugins/system/jat3/jat3/base-themes/default/css/css3.css" type="text/css">
+    <link rel="stylesheet" href="plugins/system/jat3/jat3/base-themes/default/css/menu/mega.css" type="text/css">
+    <link rel="stylesheet" href="templates/ja_university/css/typo.css" type="text/css">
+    <link rel="stylesheet" href="templates/ja_university/css/template.css" type="text/css">
+    <link rel="stylesheet" href="templates/ja_university/css/layout-mobile.css" type="text/css" media="only screen and (max-width:719px)">
+    <link rel="stylesheet" href="templates/ja_university/css/layout-mobile-port.css" type="text/css" media="only screen and (max-width:479px)">
+    <link rel="stylesheet" href="templates/ja_university/css/layout-tablet.css" type="text/css" media="only screen and (min-width:720px) and (max-width: 985px)">
+    <link rel="stylesheet" href="templates/ja_university/css/layout.css" type="text/css">
+    <link rel="stylesheet" href="templates/ja_university/css/menu/mega.css" type="text/css">
+    <link rel="stylesheet" href="templates/ja_university/css/mod_jasidenews.css" type="text/css">
+    <link rel="stylesheet" href="templates/ja_university/css/mod_jaslideshowlite.css" type="text/css">
+    <script src="media/system/js/mootools-core.js"></script>
+    <script src="media/system/js/core.js"></script>
+    <script src="media/system/js/mootools-more.js"></script>
+    <script src="media/system/js/modal.js"></script>
+    <script src="media/jui/js/jquery.min.js"></script>
+    <script src="media/jui/js/jquery-noconflict.js"></script>
+    <script src="media/system/js/caption.js"></script>
+    <script src="plugins/system/jat3/jat3/base-themes/default/js/core.js"></script>
+    <script src="templates/ja_university/js/menu/mega.js"></script>
+    <script src="modules/mod_jaslideshowlite/assets/script.js"></script>
+    <script>
+      window.addEvent('domready', function() {
+        SqueezeBox.initialize({});
+        SqueezeBox.assign($('a.modal'), {
+          parse: 'rel'
+        });
+      });
+      var K2SitePath = '/';
+      window.addEvent('load', function() {
+        new JCaption('img.caption');
+      });
+    </script>
+    <!--[if ie] >
+    < link href="plugins/system/jat3/jat3/base-themes/default/css/template-ie.css" type="text/css" rel="stylesheet" / >
+    < ![endif]-->
+    <!--[if ie] >
+    < link href="templates/ja_university/css/template-ie.css" type="text/css" rel="stylesheet" / >
+    < ![endif]-->
+    <!--[if ie 7] >
+    < link href="plugins/system/jat3/jat3/base-themes/default/css/template-ie7.css" type="text/css" rel="stylesheet" / >
+    < ![endif]-->
+    <!--[if ie 7] >
+    < link href="templates/ja_university/css/template-ie7.css" type="text/css" rel="stylesheet" / >
+    < ![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="HandheldFriendly" content="true">
+    <link href="plugins/system/jat3/jat3/base-themes/default/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="templates/ja_university/themes/blue/css/template.css" type="text/css">
+    <link rel="stylesheet" href="templates/ja_university/themes/blue/css/menu/mega.css" type="text/css">
+    <link rel="stylesheet" href="templates/ja_university/themes/blue/css/mod_jacontentslider.css" type="text/css">
+    <link rel="stylesheet" href="templates/ja_university/themes/blue/css/mod_jaslideshowlite.css" type="text/css">
+    <link rel="stylesheet" href="templates/ja_university/css/responsive-tables.css">
+    <script src="templates/ja_university/js/responsive-tables.js">
+    </script>
+    <style type="text/css">
+      /*dynamic css*/
+      body.bd .main {
+        width: 980px;
+      }
+      body.bd #ja-wrapper {
+        min-width: 980px;
+      }
+    </style>
   </head>
-  <body id="bd" class="bd fs4 com_content  body allpage">
-
+  <body class="bd fs4 com_content" id="bd">
+    <a name="Top" id="Top">
+    </a>
     <div id="ja-wrapper">
-
-      <div id="ja-header" class="wrap">
+      <div id="ja-header" class="wrap ">
         <div class="main">
           <div class="main-inner1 clearfix">
             <h1 class="logo">
-              <a href="/" title="Cайт Федерального Интернет-экзамена в сфере профессионального образования"><span>Федеральный Интернет-экзамен в сфере профессионального образования</span></a>
+              <a href="/" title="Cайт Федерального Интернет-экзамена в сфере профессионального образования">
+                <span>Федеральный Интернет-экзамен в сфере профессионального образования</span>
+              </a>
             </h1>
-
             <div id="ja-search">
               <div class="custom">
                 <table style="width: 200px; font-weight: bold;">
                   <tbody>
                     <tr>
-                      <td><a class="signin" href="vhod.html"><span>Вход студента</span> </a></td>
-                      <td><a class="signup" href="#"><span>Регистрация ОУ</span> </a></td>
+                      <td><a class="signin" href="vhod.html"><span>Вход студента</span></a></td>
+                      <td><a href="#" class="signup"><span>Регистрация ОУ</span></a></td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </div>
-            
           </div>
         </div>
       </div>
+      <div id="ja-mainnav" class="wrap ">
+        <div class="main">
+          <div class="main-inner1 clearfix">
+            <div class="ja-megamenu clearfix mm-enable" id="ja-megamenu">
+              <ul class="megamenu level0">
+                <li class="mega first active">
+                  <a href="index.html" class="mega first active" id="menu435" title="Главная">
+                    <span class="menu-title">Главная</span>
+                  </a>
+                </li>
+                <li class="mega">
+                  <a href="#" class="mega" id="menu592" title="Сроки и условия">
+                    <span class="menu-title">Сроки и условия</span>
+                  </a>
+                </li>
+                <li class="mega haschild">
+                  <a href="#" class="mega haschild" id="menu631" title="Услуги">
+                    <span class="menu-title">Услуги</span>
+                  </a>
+                  <div style="width: 110px; height: 109px; display: none;" class="childcontent cols1 ">
+                    <div style="width: 90px;" class="childcontent-inner-wrap">
+                      <div class="childcontent-inner clearfix" style="width: 90px;">
+                        <div class="megacol column1 first" style="width: 90px;">
+                          <ul class="megamenu level1">
+                            <li class="mega first">
+                              <a href="#" class="mega first" id="menu593" title="Консалтинг">
+                                <span class="menu-title">Консалтинг</span>
+                              </a>
+                            </li>
+                            <li class="mega last">
+                              <a href="#" class="mega last" id="menu632" title="Аудит">
+                                <span class="menu-title">Аудит</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="mega haschild">
+                  <a href="#" class="mega haschild " id="menu594" title="Методическая поддержка">
+                    <span class="menu-title">Методическая поддержка</span>
+                  </a>
+                  <div style="width: 236px; height: 228px; display: none; margin-left: 0px; left: 326px; z-index: 1000; overflow: hidden;" class="childcontent cols1 ">
+                    <div style="width: 216px; opacity: 0;" class="childcontent-inner-wrap">
+                      <div class="childcontent-inner clearfix" style="width: 216px;">
+                        <div class="megacol column1 first" style="width: 216px;">
+                          <ul class="megamenu level1">
+                            <li class="mega first">
+                              <a href="#" class="mega first" id="menu599" title="Для студента">
+                                <span class="menu-title">Для студента</span>
+                              </a>
+                            </li>
+                            <li class="mega">
+                              <a href="#" class="mega" id="menu598" title="Для вузов и ссузов">
+                                <span class="menu-title">Для вузов и ссузов</span>
+                              </a>
+                            </li>
+                            <li class="mega">
+                              <a href="#" class="mega" id="menu600" title="Для разработчиков АПИМ">
+                                <span class="menu-title">Для разработчиков АПИМ</span>
+                              </a>
+                            </li>
+                            <li class="mega">
+                              <a href="#" class="mega" id="menu601" title="Структуры АПИМ">
+                                <span class="menu-title">Структуры АПИМ</span>
+                              </a>
+                            </li>
+                            <li class="mega last">
+                              <a href="#" class="mega last" id="menu602" title="Обеспечение тестовыми материалами">
+                                <span class="menu-title">Обеспечение тестовыми материалами</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="mega haschild">
+                  <a href="#" class="mega haschild" id="menu603" title="Именная страница">
+                    <span class="menu-title">Именная страница</span>
+                  </a>
+                  <div style="width: 190px; height: 144px; display: none;" class="childcontent cols1 ">
+                    <div style="width: 170px;" class="childcontent-inner-wrap">
+                      <div class="childcontent-inner clearfix" style="width: 170px;">
+                        <div class="megacol column1 first" style="width: 170px;">
+                          <ul class="megamenu level1">
+                            <li class="mega first">
+                              <a href="#" class="mega first" id="menu636" title="Регистрация ОУ">
+                                <span class="menu-title">Регистрация ОУ</span>
+                              </a>
+                            </li>
+                            <li class="mega">
+                              <a href="#" class="mega" id="menu604" title="Участника ФЭПО">
+                                <span class="menu-title">Участника ФЭПО</span>
+                              </a>
+                            </li>
+                            <li class="mega last">
+                              <a href="#" class="mega last" id="menu605" title="Рецензента">
+                                <span class="menu-title">Рецензента</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="mega haschild">
+                  <a href="#" class="mega haschild" id="menu606" title="Тестирование">
+                    <span class="menu-title">Тестирование</span>
+                  </a>
+                  <div style="width: 190px; height: 179px; display: none;" class="childcontent cols1 ">
+                    <div style="width: 170px;" class="childcontent-inner-wrap">
+                      <div class="childcontent-inner clearfix" style="width: 170px;">
+                        <div class="megacol column1 first" style="width: 170px;">
+                          <ul class="megamenu level1">
+                            <li class="mega first">
+                              <a href="kontrolnoe.html" class="mega first" id="menu607" title="Контрольное">
+                                <span class="menu-title">Контрольное</span>
+                              </a>
+                            </li>
+                            <li class="mega">
+                              <a href="#" class="mega" id="menu608" title="Off-line">
+                                <span class="menu-title">Off-line</span>
+                              </a>
+                            </li>
+                            <li class="mega">
+                              <a href="#" class="mega" id="menu609" title="Репетиционное вузам">
+                                <span class="menu-title">Репетиционное вузам</span>
+                              </a>
+                            </li>
+                            <li class="mega last">
+                              <a href="#" class="mega last" id="menu610" title="Репетиционное ссузам">
+                                <span class="menu-title">Репетиционное ссузам</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="mega last">
+                  <a href="#" class="mega last" id="menu498" title="Контакты">
+                    <span class="menu-title">Контакты</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <script type="text/javascript">
+      var megamenu = new jaMegaMenuMoo('ja-megamenu', {
+        'bgopacity': 0,
+        'delayHide': 300,
+        'slide': 0,
+        'fading': 1,
+        'direction': 'down',
+        'action': 'mouseover',
+        'tips': false,
+        'duration': 300,
+        'hidestyle': 'fastwhenshow'
+      });
 
-      <?php require '_includes/menu.php' ?>
-      <?php include '_includes/mainslider.php' ?>
-
-
-      <!-- MAIN CONTAINER -->
-      <div class="wrap ja-r1" id="ja-container">
+            </script>
+            <!-- jdoc:include type="menu" level="0" / -->
+          </div>
+        </div>
+      </div>
+      <div id="ja-slideshow" class="wrap">
         <div class="main clearfix">
-          <div style="width:67%" id="ja-mainbody">
+          <div id="ja-ss-174" class="ja-ss ja-ss-wrap slide">
+            <div class="ja-ss-items">
+              <div class="ja-ss-item"><img src="images/slideshow/slide01_960_300.jpg" alt="Анализ деятельности">
+                <div class="ja-ss-desc">
+                  <h3>Анализ деятельности</h3>
+                  <p>Анализ деятельности образовательного учреждения по показателям <a href="#">государственной аккредитации</a></p>
+                </div>
+                <div class="ja-ss-mask mask-left">&nbsp;</div>
+                <div class="ja-ss-mask mask-right">&nbsp;</div>
+              </div>
+              <div class="ja-ss-item"><img src="images/slideshow/slide02_960_300.jpg" alt="Контроль уровня знаний студентов">
+                <div class="ja-ss-desc">
+                  <h3>Контроль уровня знаний студентов</h3>
+                  <p>Организация и проведение "Федерального интернет-экзамена в сфере профессионального образования"</p>
+                </div>
+                <div class="ja-ss-mask mask-left">&nbsp;</div>
+                <div class="ja-ss-mask mask-right">&nbsp;</div>
+              </div>
+              <div class="ja-ss-item"><img src="images/slideshow/slide03_960_300.jpg" alt="Разработчикам АПИМ">
+                <div class="ja-ss-desc">
+                  <h3>Разработчикам АПИМ</h3>
+                  <ul style="list-style-type: disc; margin-left: 15px;">
+                    <li><p><a href="#">Кодификаторы</a>элементов содержания дисциплин циклов ГСЭ, ЕН</p></li>
+                    <li><p><a href="#">Требования и шаблоны по оформлению заданий АПИМ</a> для Интернет-экзамена</p></li>
+                  </ul>
+                </div>
+                <div class="ja-ss-mask mask-left"></div>
+                <div class="ja-ss-mask mask-right"></div>
+              </div>
+            </div>
+            <div class="ja-ss-btns clearfix"><span class="ja-ss-prev">« PREVIOUS</span><span class="ja-ss-next">NEXT »</span></div>
+          </div>
+          <script type="text/javascript">
+            window.addEvent('domready', function() {
+              window.jassliteInst = window.jassliteInst || [];
+              window.jassliteInst.push(new JASliderCSS('ja-ss-174', {
+                interval: 5000,
+                duration: 1000,
+                repeat: true,
+                autoplay: 0,
+                navigation: 1,
+                thumbnail: 0,
+                urls: ['#', '#', '#'],
+                targets: ['', '', '']
+              }));
+            });
+          </script>
+          <!-- Fix animation in IE -->
+          <!--[if IE] >
+          < script src="/modules/mod_jaslideshowlite/assets/iefix.js" type="text/javascript" >
+          < /script >
+          < ![endif]-->
+        </div>
+      </div>
+      <!-- MAIN CONTAINER -->
+      <div id="ja-container" class="wrap ja-r1">
+        <div class="main clearfix">
+          <div id="ja-mainbody" style="width:67%">
             <!-- CONTENT -->
-            <div style="width:100%" id="ja-main">
+            <div id="ja-main" style="width:100%">
               <div class="inner clearfix">
-                <div class="ja-mass ja-mass-top clearfix" id="ja-content-mass-top">
-                  <div id="Mod146" class="ja-moduletable moduletable  clearfix">
+                <div id="ja-content-mass-top" class="ja-mass ja-mass-top clearfix">
+                  <div class="ja-moduletable moduletable clearfix" id="Mod146">
                     <h3><span>Уважаемые коллеги!</span></h3>
                     <div class="ja-box-ct clearfix">
                       <div class="custom">
-                        <p>Научно-информационный центр аккредитации приглашает Вас принять участие в продолжении проекта «Федеральный интернет-экзамен в сфере профессионального образования»! <br /><br /></p>
-                        <p>Данная сессия ФЭПО будет проходить в феврале - июне 2013 года. Регистрация участников Интернет-экзамена, условия участия, перечень дисциплин, методическая информация и другие необходимые сведения размещены на сайте <a href="http://www.fepo-nica.ru">www.fepo-nica.ru.</a> <br /><br /></p>
-                        <p>Используемые нами тестовые материалы позволяют установить соответствие структуры знаний студентов базовому уровню содержания дисциплин образовательного стандарта второго поколения и определить долю студентов, освоивших все разделы (дидактические единицы) дисциплины. <br /><br /></p>
-                        <p>Детальный анализ результатов тестирования включает оценку освоения отельных тем и разделов дисциплины группой студентов. Имеется возможность интегрирования информации для кафедры, факультета и образовательного учреждения в целом, а также проведение сравнения результатов тестирования Вашего образовательного учреждения с соответствующими показателями содержания и уровня подготовки других образовательных учреждений. <br /><br /></p>
-                        <p>При организации и проведении тестирования для образовательных учреждений возможна гибкая корректировка содержательной структуры тестовых материалов с целью проведение семестровых оценочных процедур для дисциплин, изучаемых в течение нескольких семестров. <br /><br /></p>
-                        <p>В рамках развития Интернет-экзамена для образовательных программ, реализующих ФГОС-3, будут предложены тестовые материалы по гуманитарным и естественнонаучным дисциплинам, предназначенные для оценки достижения студентами проектируемых результатов освоения двух циклов обучения. Результаты Интернет-экзамена могут быть использованы образовательным учреждением в рамках мониторинга уровня подготовки студентов, а также при подготовке к тестированию при аккредитационной экспертизе. <br /><br /></p>
+                        <p>Научно-информационный центр аккредитации приглашает Вас принять участие в продолжении проекта «Федеральный интернет-экзамен в сфере профессионального образования»!<br><br></p>
+                        <p>Данная сессия ФЭПО будет проходить в феврале - июне 2013 года. Регистрация участников Интернет-экзамена, условия участия, перечень дисциплин, методическая информация и другие необходимые сведения размещены на сайте <a href="http://www.fepo-nica.ru">www.fepo-nica.ru.</a><br><br></p>
+                        <p>Используемые нами тестовые материалы позволяют установить соответствие структуры знаний студентов базовому уровню содержания дисциплин образовательного стандарта второго поколения и определить долю студентов, освоивших все разделы (дидактические единицы) дисциплины.<br><br></p>
+                        <p>Детальный анализ результатов тестирования включает оценку освоения отельных тем и разделов дисциплины группой студентов. Имеется возможность интегрирования информации для кафедры, факультета и образовательного учреждения в целом, а также проведение сравнения результатов тестирования Вашего образовательного учреждения с соответствующими показателями содержания и уровня подготовки других образовательных учреждений.<br><br></p>
+                        <p>При организации и проведении тестирования для образовательных учреждений возможна гибкая корректировка содержательной структуры тестовых материалов с целью проведение семестровых оценочных процедур для дисциплин, изучаемых в течение нескольких семестров.<br><br></p>
+                        <p>В рамках развития Интернет-экзамена для образовательных программ, реализующих ФГОС-3, будут предложены тестовые материалы по гуманитарным и естественнонаучным дисциплинам, предназначенные для оценки достижения студентами проектируемых результатов освоения двух циклов обучения. Результаты Интернет-экзамена могут быть использованы образовательным учреждением в рамках мониторинга уровня подготовки студентов, а также при подготовке к тестированию при аккредитационной экспертизе.<br><br></p>
                         <p>Желаем Вам успехов!</p>
                       </div>
                     </div>
+                  </div>
+                </div>
+                <div id="ja-contentwrap" class="clearfix ">
+                  <div id="ja-content" class="column" style="width:100%">
+                    <div id="ja-current-content" class="column" style="width:100%"></div>
                   </div>
                 </div>
               </div>
@@ -69,29 +364,30 @@
             <!-- //CONTENT -->
           </div>
           <!-- RIGHT COLUMN-->
-          <div style="width:33%" class="column sidebar" id="ja-right">
+          <div id="ja-right" class="column sidebar" style="width:33%">
             <div class="ja-colswrap clearfix ja-r1">
-              <div style="width:100%" class="ja-col  column" id="ja-right2">
-                <div id="Mod87" class="ja-moduletable moduletable  clearfix">
+              <div id="ja-right2" class="ja-col column" style="width:100%">
+                <div class="ja-moduletable moduletable clearfix" id="Mod87">
                   <h3><span>Новости и объявления</span></h3>
                   <div class="ja-box-ct clearfix">
                     <div class="ja-sidenews-list clearfix">
                       <div class="ja-slidenews-item">
-                        <img align="left" title=" Анализ деятельности учреждения" alt=" Анализ деятельности учреждения" src="images/sam-12-small_140_100.jpg" />
-                        <a href="#" class="ja-title"> Анализ деятельности учреждения</a><span class="ja-createdate">13.08.2012</span>
+                        <img src="images/sam-12-small_140_100.jpg" alt=" Анализ деятельности учреждения" title=" Анализ деятельности учреждения" align="left">
+                        <a class="ja-title" href="#">Анализ деятельности учреждения</a>
+                        <span class="ja-createdate">13.08.2012</span>
                         <p style="clear: both;">Предлагаем Вам информационно-аналитическую услугу в виде анализа деятельности образовательного учреждения высшего профессионального...</p>
                       </div>
                       <div class="ja-slidenews-item">
-                        <img align="left" title="Федеральный интернет-экзамен в сфере профессионального образования" alt="Федеральный интернет-экзамен в сфере профессионального образования" src="images/sam-13-small_140_100.jpg" />		  
-                          <a href="#" class="ja-title">Федеральный интернет-экзамен в сфере профессионального образования</a>
-                          <span class="ja-createdate">13.08.2012</span>
-                          <p style="clear: both;">Научно-информационный центр аккредитации приглашает Вас принять участие в продолжении проекта «Федеральный интернет-экзамен в сфере п...</p>
+                        <img src="images/sam-13-small_140_100.jpg" alt="Федеральный интернет-экзамен в сфере профессионального образования" title="Федеральный интернет-экзамен в сфере профессионального образования" align="left">
+                        <a class="ja-title" href="#">Федеральный интернет-экзамен в сфере профессионального образования</a>
+                        <span class="ja-createdate">13.08.2012</span>
+                        <p style="clear: both;">Научно-информационный центр аккредитации приглашает Вас принять участие в продолжении проекта «Федеральный интернет-экзамен в сфере п...</p>
                       </div>
                       <div class="ja-slidenews-item">
-                        <img align="left" title="Интернет-экзамен" alt="Интернет-экзамен" src="images/sam-14_140_100.jpg" />		  
-                          <a href="#" class="ja-title">Интернет-экзамен</a>
-                          <span class="ja-createdate">13.08.2012</span>
-                          <p style="clear: both;">Регистрация для участия в Интернет-экзамене открыта!</p>
+                        <img src="images/sam-14_140_100.jpg" alt="Интернет-экзамен" title="Интернет-экзамен" align="left">
+                        <a class="ja-title" href="#">Интернет-экзамен</a>
+                        <span class="ja-createdate">13.08.2012</span>
+                        <p style="clear: both;">Регистрация для участия в Интернет-экзамене открыта!&nbsp;</p>
                       </div>
                       <h4 class="ja-slidenews-allnews"><a href="#">Все новости</a></h4>
                     </div>
@@ -104,20 +400,81 @@
         </div>
       </div>
       <!-- //MAIN CONTAINER -->
-
-      <div id="ja-footer"
-           class="wrap ">
+      <div id="ja-botsl" class="wrap ">
+        <div class="main clearfix">
+          <!-- SPOTLIGHT -->
+          <div class="ja-box column ja-box-left" style="width: 25%; min-height: 110px;">
+            <div class="ja-moduletable moduletable clearfix" id="Mod97">
+              <div class="ja-box-ct clearfix">
+                <div class="custom">
+                  <div class="inner-div">
+                    <a target="_blank" href="http://abitur.nica.ru/">
+                      <img src="images/all_un.png" alt="all un" title="Sample image" height="100" width="225">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ja-box column ja-box-center" style="width: 25%; min-height: 110px;">
+            <div class="ja-moduletable moduletable clearfix" id="Mod98">
+              <div class="ja-box-ct clearfix">
+                <div class="custom">
+                  <div class="inner-div">
+                    <a target="_blank" href="http://nica.ru/">
+                      <img src="images/nica.png" alt="nica" title="Sample image" height="100" width="225">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ja-box column ja-box-center" style="width: 25%; min-height: 110px;">
+            <div class="ja-moduletable moduletable clearfix" id="Mod99">
+              <div class="ja-box-ct clearfix">
+                <div class="custom">
+                  <div class="inner-div">
+                    <a target="_blank" href="http://imtsa.ru/">
+                      <img src="images/imtca.png" alt="imtca" title="Sample image" height="100" width="225">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ja-box column ja-box-right" style="width: 25%; min-height: 110px;">
+            <div class="ja-moduletable moduletable clearfix" id="Mod100">
+              <div class="ja-box-ct clearfix">
+                <div class="custom">
+                  <div class="inner-div">
+                    <a target="_blank" href="http://att.nica.ru/">
+                      <img src="images/test.png" alt="test" title="Sample image" height="100" width="225">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- SPOTLIGHT -->
+          <script type="text/javascript">
+            window.addEvent('load', function() {
+              equalHeight('#ja-botsl .ja-box')
+            });
+          </script>
+        </div>
+      </div>
+      <div id="ja-footer" class="wrap ">
         <div class="main clearfix">
           <div class="ja-copyright">
             <small>© 2013 Cайт Федерального Интернет-экзамена в сфере профессионального образования. Все права защищены.</small>
           </div>
         </div>
       </div>
-
     </div>
-
-
-
+    <div tabindex="-1" style="z-index: 65555; opacity: 0;" aria-hidden="true" id="sbox-overlay"></div>
+    <div class="shadow" style="z-index: 65557;" aria-hidden="true" role="dialog" id="sbox-window">
+      <div style="opacity: 0;" id="sbox-content"></div>
+      <a aria-controls="sbox-window" role="button" href="#" id="sbox-btn-close"></a>
+    </div>
   </body>
-
 </html>
